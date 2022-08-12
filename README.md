@@ -36,12 +36,12 @@ Tree diagram will have clickable child nodes
 Technologies, Libraries, APIs:
 This project will use the following technologies for implementation: 
 The Encyclopedia Britannica API to render historical data 
-The Canvas API to render interactive elements
+The D3 library to render interactive elements
 Webpack to bundle the source Javascript code 
 Npm for dependency management 
 
 Implementation Timeline: 
-Friday and Weekend: Setup project, incorporate Canvas API and Encyclopedia Britannia API. Create world map, pop up window, tree-ring, and tree diagram scaffold. Incorporate appropriate illustrations and seed data. Get world map and buildings working correctly.
+Friday and Weekend: Setup project, incorporate D3 Library and Encyclopedia Britannia API. Create world map, pop up window, tree-ring, and tree diagram scaffold. Incorporate appropriate illustrations and seed data. Get world map and buildings working correctly.
 
 Monday: Start using Encyclopedia API to generate information to be rendered in the tree-ring. Ensure that it is working appropriately. 
 
