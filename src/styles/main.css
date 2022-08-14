@@ -1,0 +1,10 @@
+@import './reset.css';
+@import './rings.css';
+
+
+h1 {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 5vh;
+  display: flex;
+  justify-content: center;
+}
