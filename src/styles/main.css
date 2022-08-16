@@ -4,12 +4,13 @@
 
 h1 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 6vh;
   display: block;
   text-align: center;
   letter-spacing: 0.35rem;
   padding-top: 5vh;
+  padding-bottom: 3vh;
 }
 
 
@@ -17,7 +18,19 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   box-sizing: border-box;
+}
+
+#map-container {
   width: 70%;
+  display: block;
 }
 
 
+#map-container path {
+  fill: #2b6441;
+  transition: .6s fill;
+}
+
+#map-container path:hover {
+  fill:aqua;
+}

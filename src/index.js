@@ -16,15 +16,15 @@ document.addEventListener("DOMContentLoaded", function(){
         .attr("id", "mainContainer")
         .attr("class", "container")
 
-    //map
-       var p = document.getElementById("map-container");
-       console.log(p)
-       // Get the SVG document inside the Object tag
-      
-       // Get one of the SVG items by ID;
-    //    var svgItem = svgDoc.getElementById("map-container");
-    //    // Set the colour to something else
-    //    svgItem.setAttribute("fill", "lime");
+    // //map
+    //    // Get the Object by ID
+    //    var a = document.getElementById("map-container");
+    // //    // Get the SVG document inside the Object tag
+    //    var svgDoc = a.contentDocument;
+    // //    // Get one of the SVG items by ID;
+    //    var svgItem = svgDoc.getElementById("path");
+    // // // Set the colour to something else
+    // // svgItem.setAttribute("fill", "lime");
 
 
     //rings 
@@ -42,10 +42,10 @@ document.addEventListener("DOMContentLoaded", function(){
     //event handler for the rings
     function callback(event) { 
         var events = data[event.target.id]
+        console.log(event)
          //gives area element of map, event.target = USA tree, id = USA tree id 
        
        for (let i = radius.length; i > 0; i--) {
-        // console.log(data[i][i]["year"])
            var halfCircle = function (i) {
                return svg.append("path")
                    .attr("transform", "translate(250, 230)")
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
                    .attr("class", "halfCircle")
                    .attr("id", i + 1) 
                    .on("mouseover", function () { return tip.style("visibility", "visible")
-                       .html(`<p style="font-family: 'Roboto', san-serif; font-size: 30px; padding-bottom: 3vh">${events[i].year}</p><p style="font-family: 'Roboto', san-serif; font-size: 18px; text-align:center;">${events[i].event}</p><br><p><a style="text-decoration: none; font-family: 'Roboto', san-serif; font-size: 18px; text-align: center; href=${events[i].website}>Learn More</a></p>`);
+                       .html(`<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i].year}</p><p style="font-size: 2vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`);
                      }) 
                    .on("mousemove", function () { return tip });
                 //    .on("mouseout", function () { return tip.style("visibility", "hidden"); });;
@@ -71,14 +71,12 @@ document.addEventListener("DOMContentLoaded", function(){
            
         }}   
         //array of trees in the world map
-       var map = document.querySelectorAll("object path")
-        console.log(map)
-
+       var map = document.querySelectorAll("path")
        for (let i = 0; i < map.length; i++) {
            map[i].addEventListener("click", callback)
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p style="font-family: courier; font-size:14px;"> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
+                   .html(`<p style="font-family: courier; font-size:1vh;"> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
                    .style("top", (event.pageY - 100) + "px")
                    .style("left", (event.pageX - 100) + "px");
            })
@@ -90,17 +88,18 @@ document.addEventListener("DOMContentLoaded", function(){
         //tip for tree-rings
         var tip = d3.select("div#mainContainer")
            .append("div")
-           .style("width", "500px")
-           .style("height", "200px")
+           .attr("id", "tip1")
            .style("visibility", "hidden")
            .style("background-color", "white")
            .style("border", "solid")
            .style("border-width", "1px")
            .style("border-radius", "5px")
-           .style("padding", "10px");
+           .style("padding", "80px");
 
-        var tip2 = d3.select("svg#map-container")
+
+        var tip2 = d3.select("div#mainContainer")
             .append("div")
+            .attr("id", "tip2")
             .style("position", "absolute")
             .style("visibility", "hidden")
             .style("background-color", "white")

@@ -7,15 +7,49 @@
 .container {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
     height: 50%;
+    width: 35%;
+    margin: auto;
 
 }
 
-.container > div {
-    margin: auto;
+#map-container {
+    display: flex;
+    align-items: flex-start;
+
 }
 
 .svg-content {
     height: 50%;
+}
+
+#tip1 {
+    width: 1000px;
+    height: fit-content;
+}
+
+#tip-text {
+    display: block;
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    padding: 1vh;
+    margin-top: 1vh;
+    line-height: 1.2;
+
+
+}
+
+#tip-link > a { 
+    display: block;
+    text-decoration: none;
+    font-size: 2vh;
+    outline: none;
+    color: black;
+    background-color: #DBE1BC;
+    padding: 0.75vw;
+    text-align: center;
+    margin-top: 2vh;
+  
 }
