@@ -6,10 +6,16 @@
 
 .container {
     display: flex;
-    min-height: 100vh;
+    flex-direction: column-reverse;
+    justify-content: center;
+    height: 50%;
+
+}
+
+.container > div {
+    margin: auto;
 }
 
 .svg-content {
-    margin: auto;
-    height: 100vh;
+    height: 50%;
 }

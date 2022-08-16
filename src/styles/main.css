@@ -3,17 +3,21 @@
 
 
 h1 {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 5vh;
-  display: flex;
-  justify-content: center;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 6vh;
+  display: block;
+  text-align: center;
+  letter-spacing: 0.35rem;
+  padding-top: 5vh;
 }
 
-p {
+
+#all-contents {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
+  flex-wrap: nowrap;
+  box-sizing: border-box;
+  width: 70%;
 }
 
 

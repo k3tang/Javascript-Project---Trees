@@ -11,13 +11,20 @@ document.addEventListener("DOMContentLoaded", function(){
 
    (async ($d3) => {
     const mainContainer = $d3
-        .select("body")
+        .select("#all-contents")
         .append("div")
         .attr("id", "mainContainer")
         .attr("class", "container")
-        .style("height", "50%")
-        .style("display", "flex")
 
+    //map
+       var p = document.getElementById("map-container");
+       console.log(p)
+       // Get the SVG document inside the Object tag
+      
+       // Get one of the SVG items by ID;
+    //    var svgItem = svgDoc.getElementById("map-container");
+    //    // Set the colour to something else
+    //    svgItem.setAttribute("fill", "lime");
 
 
     //rings 
@@ -32,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .attr("class", "svg-content");
    
 
-    //event handler 
+    //event handler for the rings
     function callback(event) { 
         var events = data[event.target.id]
          //gives area element of map, event.target = USA tree, id = USA tree id 
@@ -54,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function(){
                    .attr("class", "halfCircle")
                    .attr("id", i + 1) 
                    .on("mouseover", function () { return tip.style("visibility", "visible")
-                       .html(`<p style="font-family: courier; font-size: 40px">${events[i].year}</p><span>${events[i].event}</span><br><a style="text-decoration: none;" href=${events[i].website}>Learn More</a>`);
+                       .html(`<p style="font-family: 'Roboto', san-serif; font-size: 30px; padding-bottom: 3vh">${events[i].year}</p><p style="font-family: 'Roboto', san-serif; font-size: 18px; text-align:center;">${events[i].event}</p><br><p><a style="text-decoration: none; font-family: 'Roboto', san-serif; font-size: 18px; text-align: center; href=${events[i].website}>Learn More</a></p>`);
                      }) 
                    .on("mousemove", function () { return tip });
                 //    .on("mouseout", function () { return tip.style("visibility", "hidden"); });;
@@ -64,15 +71,14 @@ document.addEventListener("DOMContentLoaded", function(){
            
         }}   
         //array of trees in the world map
-       var map = this.querySelectorAll("area")
+       var map = document.querySelectorAll("object path")
         console.log(map)
-
 
        for (let i = 0; i < map.length; i++) {
            map[i].addEventListener("click", callback)
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p style="font-family: courier; font-size:14px;">Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
+                   .html(`<p style="font-family: courier; font-size:14px;"> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
                    .style("top", (event.pageY - 100) + "px")
                    .style("left", (event.pageX - 100) + "px");
            })
@@ -80,13 +86,12 @@ document.addEventListener("DOMContentLoaded", function(){
                return tip2.style("visibility", "hidden");
            })
        }
-       
+   
         //tip for tree-rings
         var tip = d3.select("div#mainContainer")
            .append("div")
            .style("width", "500px")
            .style("height", "200px")
-           .style("margin-right", "auto")
            .style("visibility", "hidden")
            .style("background-color", "white")
            .style("border", "solid")
@@ -94,7 +99,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .style("border-radius", "5px")
            .style("padding", "10px");
 
-        var tip2 = d3.select("p#map-container")
+        var tip2 = d3.select("svg#map-container")
             .append("div")
             .style("position", "absolute")
             .style("visibility", "hidden")
@@ -104,9 +109,6 @@ document.addEventListener("DOMContentLoaded", function(){
             .style("border-radius", "5px")
             .style("padding", "10px");
 
-    
-
-     
 
    })(d3);
    
