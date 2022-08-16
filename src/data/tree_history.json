@@ -1,0 +1,502 @@
+﻿{	
+	"1": [
+	{
+		"event": "People of the Stallings Culture on the Savannah River begin making pottery",
+		"year": "2888 BC",
+		"website": "https://en.wikipedia.org/wiki/Archaic_period_(North_America)",
+		"id": "1"
+	},
+	{
+		"event": "Poverty Point culture in northeastern Louisiana features stone work, flintknapping, earthenware, and effigy, conical, and platform mounds, as well as planned settlements on concentric earthen ridges",
+		"year": "2000 - 1000 BC",
+		"website": "https://en.wikipedia.org/wiki/Poverty_Point_culture",
+		"id": "2"
+	},
+	{
+		"event": "Ancestral Pueblo culture dominates much of the American Southwest.",
+		"year": "900 AD",
+		"website": "https://en.wikipedia.org/wiki/Ancestral_Puebloans",
+		"id": "3"
+	},
+	{
+		"event": "Christopher Columbus sails to India and stumbles on to the American continent",
+		"year": "1492 AD",
+		"website": "https://en.wikipedia.org/wiki/Columbian_exchange",
+		"id": "4"
+	},
+	{
+		"event": "Beginning of the American Revolutionary War",
+		"year": "1775 AD ",
+		"website": "https://en.wikipedia.org/wiki/American_Revolution",
+		"id": "5"
+	},
+	{
+		"event": "Beginning of the American Civil War",
+		"year": "1861 AD",
+		"website": "https://en.wikipedia.org/wiki/American_Civil_War",
+		"id": "6"
+	},
+	{
+		"event": "Beginning of the Civil Rights Movement",
+		"year": "1954 AD",
+		"website": "https://en.wikipedia.org/wiki/Civil_rights_movement",
+		"id": "7"
+	},
+	{
+		"event": "United States and most of Europe enters the longest post–World War II recession, often called the \"Great Recession\"",
+		"year": "2008 AD",
+		"website": "https://en.wikipedia.org/wiki/Great_Recession_in_the_United_States",
+		"id": "8"
+	}
+],
+	"2" : [
+	{
+		"event": "Development of Mesoamerican cultures during the Formative Period including the Mayan, Aztec, and Olmec cultures",
+		"year": "2000 BC - 250 AD",
+		"website": "https://en.wikipedia.org/wiki/List_of_pre-Columbian_cultures",
+		"id": "1"
+	},
+	{
+		"event": "Rise of Chavin culture in the northern Andean highlands",
+		"year": "900 BC",
+		"website": "https://en.wikipedia.org/wiki/Chav%C3%ADn_culture",
+		"id": "2"
+	},
+	{
+		"event": "Classical Maya collapse, remains one of the greatest unsolved mysteries in archaeology",
+		"year": "900 AD",
+		"website": "https://en.wikipedia.org/wiki/Classic_Maya_collapse",
+		"id": "3"
+	},
+	{
+		"event": "The rise of the Aztecs in central Mexico",
+		"year": "1300 AD",
+		"website": "https://en.wikipedia.org/wiki/Aztecs",
+		"id": "4"
+	},
+	{
+		"event": "The Spanish conquest of the Aztec Empire ",
+		"year": "1521 AD",
+		"website": "https://en.wikipedia.org/wiki/Spanish_conquest_of_the_Aztec_Empire",
+		"id": "5"
+	},
+	{
+		"event": "Beginning of the Spanish American wars of independence",
+		"year": "1808 AD ",
+		"website": "https://en.wikipedia.org/wiki/Spanish_American_wars_of_independence",
+		"id": "6"
+	},
+	{
+		"event": "The beginning of the construction of the Panama Canal",
+		"year": "1881 AD",
+		"website": "https://en.wikipedia.org/wiki/Panama_Canal#Early_proposals_in_Panama",
+		"id": "7"
+	},
+	{
+		"event": "Fidel Castro resigns as president of Cuba, succeeded by brother Raul Castro",
+		"year": "2008 AD ",
+		"website": "https://en.wikipedia.org/wiki/Cuba#Revolution_and_Communist_Party_rule_(1959%E2%80%93present)",
+		"id": "8"
+	}
+],
+	"3": [
+	{
+		"event": "Beginning of the unified reign of the first Emperor of China, Qin Shi Huang",
+		"year": "221 BC",
+		"website": "https://en.wikipedia.org/wiki/History_of_China#Qin_dynasty_(221%E2%80%93206_BC)",
+		"id": "1"
+	},
+	{
+		"event": "The invention of paper in the Han Dynasty",
+		"year": "8 BC",
+		"website": "https://en.wikipedia.org/wiki/Papermaking",
+		"id": "2"
+	},
+	{
+		"event": "Beginning of the Silk Road, network of trade routes",
+		"year": "2 BC",
+		"website": "https://en.wikipedia.org/wiki/Silk_Road",
+		"id": "3"
+	},
+	{
+		"event": "The beginning of the Tang Dynasty, golden age of China's cosmopolitan culture",
+		"year": "618 AD",
+		"website": "https://en.wikipedia.org/wiki/Tang_dynasty#Establishment_and_early_reign",
+		"id": "4"
+	},
+	{
+		"event": "The political rise of Genghis Khan",
+		"year": "1206 AD",
+		"website": "https://en.wikipedia.org/wiki/Genghis_Khan#Jin_dynasty",
+		"id": "5"
+	},
+	{
+		"event": "The fall of imperial China and proclamation of the Republic of China",
+		"year": "1912 AD",
+		"website": "https://en.wikipedia.org/wiki/History_of_China#Qin_dynasty_(221%E2%80%93206_BC)",
+		"id": "6"
+	},
+	{
+		"event": "The end of the Chinese Civil War and establishment of People's Republic of China",
+		"year": "1949 AD",
+		"website": "https://en.wikipedia.org/wiki/History_of_the_People%27s_Republic_of_China",
+		"id": "7"
+	},
+	{
+		"event": "The handover of Hong Kong from the United Kingdom to China, establishment of a special adminsitrative region of China",
+		"year": "1997 AD",
+		"website": "https://en.wikipedia.org/wiki/Handover_of_Hong_Kong",
+		"id": "8"
+	}
+],
+	"4": [
+	{
+		"event": "The reign of the Mauryan Empire, the largest pan-Indian empire",
+		"year": "322 BC - 185 BC",
+		"website": "https://en.wikipedia.org/wiki/Maurya_Empire#Ashoka",
+		"id": "1"
+	},
+	{
+		"event": "The compilation of Charaka Samhita, a Sanskrit test on Ayurveda",
+		"year": "200 - 100 BC",
+		"website": "https://en.wikipedia.org/wiki/Charaka_Samhita",
+		"id": "2"
+	},
+	{
+		"event": "The reign of the Gupta Empire, the golden age of India",
+		"year": "319 - 467 AD",
+		"website": "https://en.wikipedia.org/wiki/Gupta_Empire",
+		"id": "3"
+	},
+	{
+		"event": "The Rashtrakuta dynasty marks the beginning of the golden age of southern Indian mathematics",
+		"year": "753 AD",
+		"website": "https://en.wikipedia.org/wiki/Rashtrakuta_dynasty",
+		"id": "4"
+	},
+	{
+		"event": "Rajaraja Chola invades and captures northern half of Sri Lanka",
+		"year": "993 AD",
+		"website": "https://en.wikipedia.org/wiki/Rajaraja_I",
+		"id": "5"
+	},
+	{
+		"event": "The Indian Rebellion of 1857",
+		"year": "1857 AD",
+		"website": "https://en.wikipedia.org/wiki/Indian_Rebellion_of_1857",
+		"id": "6"
+	},
+	{
+		"event": "The birth of Mahatma Gandhi",
+		"year": "1869 AD ",
+		"website": "https://en.wikipedia.org/wiki/Mahatma_Gandhi",
+		"id": "7"
+	},
+	{
+		"event": "The partition of India and dissolution of the British Raj",
+		"year": "1947 AD",
+		"website": "https://en.wikipedia.org/wiki/Partition_of_India",
+		"id": "8"
+	}
+],
+	"5": [
+	{
+		"event": "The Hopewell tradition era - an ancient Native American civilization connected by a network of trade routes ",
+		"year": "100BC - 500AD",
+		"website": "https://en.wikipedia.org/wiki/Hopewell_tradition#Origins",
+		"id": "1"
+	},
+	{
+		"event": "The Norse build small settlement of  L'Anse aux Meadows in Newfoundland",
+		"year": "1000 AD",
+		"website": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
+		"id": "2"
+	},
+	{
+		"event": "The formation of the Iroquois Confederacy ",
+		"year": "1142 AD ",
+		"website": "https://en.wikipedia.org/wiki/Iroquois#Formation_of_the_League",
+		"id": "3"
+	},
+	{
+		"event": "\"Canada\" was coined and clained by the French explorer Jacques Cartier for King Francis I",
+		"year": "1534 AD ",
+		"website": "https://en.wikipedia.org/wiki/Jacques_Cartier",
+		"id": "4"
+	},
+	{
+		"event": "The beginning of the French and Indian Wars",
+		"year": "1756 AD",
+		"website": "https://en.wikipedia.org/wiki/French_and_Indian_Wars",
+		"id": "5"
+	},
+	{
+		"event": "The unification of the Canadian Confederation ",
+		"year": "1867 AD",
+		"website": "https://en.wikipedia.org/wiki/Canadian_Confederation",
+		"id": "6"
+	},
+	{
+		"event": "The October Crisis ",
+		"year": "1970 AD ",
+		"website": "https://en.wikipedia.org/wiki/October_Crisis",
+		"id": "7"
+	},
+	{
+		"event": "The Constitution Act, 1982",
+		"year": "1982 AD ",
+		"website": "https://en.wikipedia.org/wiki/Constitution_Act,_1982",
+		"id": "8"
+	}
+],
+	"6": [
+	{
+		"event": "Birth of Muhammad ibn Abdullah, founder of Islam",
+		"year": "570 AD ",
+		"website": "https://en.wikipedia.org/wiki/Muhammad",
+		"id": "1"
+	},
+	{
+		"event": "The Conquest of Mecca",
+		"year": "630 AD",
+		"website": "https://en.wikipedia.org/wiki/Conquest_of_Mecca",
+		"id": "2"
+	},
+	{
+		"event": "The beginning of the Abbasid dynasty, Islamic golden age ",
+		"year": "750 AD",
+		"website": "https://en.wikipedia.org/wiki/Abbasid_dynasty",
+		"id": "3"
+	},
+	{
+		"event": "The beginning of the Crusades in the Holy Land",
+		"year": "1095 AD ",
+		"website": "https://en.wikipedia.org/wiki/Crusades",
+		"id": "4"
+	},
+	{
+		"event": "The rise of the Ottoman Empire",
+		"year": "1299 AD ",
+		"website": "https://en.wikipedia.org/wiki/Ottoman_Empire",
+		"id": "5"
+	},
+	{
+		"event": "The Gulf War",
+		"year": "1991 AD",
+		"website": "https://en.wikipedia.org/wiki/Gulf_War",
+		"id": "6"
+	},
+	{
+		"event": "The Iraq War",
+		"year": "2003 AD",
+		"website": "https://en.wikipedia.org/wiki/2003_invasion_of_Iraq",
+		"id": "7"
+	},
+	{
+		"event": "ISIS defeated, control in Syria and Iraq cease",
+		"year": "2019 AD",
+		"website": "https://en.wikipedia.org/wiki/Islamic_State",
+		"id": "8"
+	}
+],
+	"7": [
+	{
+		"event": "The rise of the Kanem-Bornu Empire ",
+		"year": "700 AD",
+		"website": "https://en.wikipedia.org/wiki/Kanem%E2%80%93Bornu_Empire#Founding_by_local_Kanembu_(Dugua)_c._700_AD",
+		"id": "1"
+	},
+	{
+		"event": "The rise of the Kingdom of Ife ",
+		"year": "1000 AD",
+		"website": "https://en.wikipedia.org/wiki/If%E1%BA%B9",
+		"id": "2"
+	},
+	{
+		"event": "Timbuktu flourish in trade as part of the Mali Empire",
+		"year": "1300s AD",
+		"website": "https://en.wikipedia.org/wiki/Timbuktu",
+		"id": "3"
+	},
+	{
+		"event": "The beginning of the Atlantic slave trade",
+		"year": "1526 AD",
+		"website": "https://en.wikipedia.org/wiki/Atlantic_slave_trade",
+		"id": "4"
+	},
+	{
+		"event": "The end of the Atlantic slave trade",
+		"year": "1800s AD",
+		"website": "https://en.wikipedia.org/wiki/Atlantic_slave_trade#Last_slave_ship_to_the_United_States",
+		"id": "5"
+	},
+	{
+		"event": "Beginning of the Scramble for Africa - colonization of most of Africa by Western European powers",
+		"year": "1881 AD",
+		"website": "https://en.wikipedia.org/wiki/Scramble_for_Africa",
+		"id": "6"
+	},
+	{
+		"event": "Discovery of Australopithecus, a genus of early hominins ",
+		"year": "1924 AD",
+		"website": "https://en.wikipedia.org/wiki/Australopithecus",
+		"id": "7"
+	},
+	{
+		"event": "Nalson Mandela becomes the first president of South Africa",
+		"year": "1994 AD",
+		"website": "https://en.wikipedia.org/wiki/Nelson_Mandela",
+		"id": "8"
+	}
+],
+	"8": [
+	{
+		"event": "Charlemagne becomes the first Holy Roman Emperor",
+		"year": "800 AD",
+		"website": "https://en.wikipedia.org/wiki/Charlemagne",
+		"id": "1"
+	},
+	{
+		"event": "Martin Luther and the Protestant Reformation ",
+		"year": "1517 AD",
+		"website": "https://en.wikipedia.org/wiki/Reformation",
+		"id": "2"
+	},
+	{
+		"event": "The beginning of the Thirty Years' War",
+		"year": "1618 AD",
+		"website": "https://en.wikipedia.org/wiki/Thirty_Years%27_War",
+		"id": "3"
+	},
+	{
+		"event": "The beginning of the Scientific Revolution and Age of Enlightenment",
+		"year": "1600s AD",
+		"website": "https://en.wikipedia.org/wiki/Age_of_Enlightenment#Philosophy",
+		"id": "4"
+	},
+	{
+		"event": "The beginning of French Revolution ",
+		"year": "1789 AD",
+		"website": "https://en.wikipedia.org/wiki/French_Revolution",
+		"id": "5"
+	},
+	{
+		"event": "The beginning of World War I",
+		"year": "1914 AD",
+		"website": "https://en.wikipedia.org/wiki/World_War_I",
+		"id": "6"
+	},
+	{
+		"event": "The beginning of World War II",
+		"year": "1939 AD",
+		"website": "https://en.wikipedia.org/wiki/World_War_II",
+		"id": "7"
+	},
+	{
+		"event": "Brexit - the withdrawal of the United Kingdom from the European Union",
+		"year": "2020 AD",
+		"website": "https://en.wikipedia.org/wiki/Brexit",
+		"id": "8"
+	}
+],
+	"9": [
+	{
+		"event": "Aboriginals have been dwelling in Austrialia for at least 50,000 years",
+		"year": " < 900 AD",
+		"website": "https://historycooperative.org/ancient-civilizations/",
+		"id": "1"
+	},
+	{
+		"event": "Captain James Cook explores east coast of Australia",
+		"year": "1770 AD",
+		"website": "https://en.wikipedia.org/wiki/James_Cook",
+		"id": "2"
+	},
+	{
+		"event": "Britian establishes a penal colony in Sydney Cove",
+		"year": "1788 AD",
+		"website": "https://en.wikipedia.org/wiki/Convicts_in_Australia",
+		"id": "3"
+	},
+	{
+		"event": "Formation of the Commonwealth of Australia ",
+		"year": "1901 AD",
+		"website": "https://en.wikipedia.org/wiki/Australia",
+		"id": "4"
+	},
+	{
+		"event": "The beginning of the Stolen Generations ",
+		"year": "1910 AD",
+		"website": "https://en.wikipedia.org/wiki/Stolen_Generations",
+		"id": "5"
+	},
+	{
+		"event": "Australia grants citizenship of Aboriginal people",
+		"year": "1962 AD",
+		"website": "https://en.wikipedia.org/wiki/Commonwealth_Electoral_Act_1918#1962_amendments",
+		"id": "6"
+	},
+	{
+		"event": "Return of Uluru-Kata Tjuta National Park to the Anangu people ",
+		"year": "1985 AD",
+		"website": "https://en.wikipedia.org/wiki/Ulu%E1%B9%9Fu-Kata_Tju%E1%B9%AFa_National_Park#History",
+		"id": "7"
+	},
+	{
+		"event": "Prime Minister Kevin Rudd apologizes to the Stolen Generation",
+		"year": "2008 AD",
+		"website": "https://en.wikipedia.org/wiki/Stolen_Generations#Trauma_and_healing",
+		"id": "8"
+	}
+],
+	"10": [
+	{
+		"event": "Anawrahta, father of the Burmese nation, asends to Pagan throne",
+		"year": "1044 AD",
+		"website": "https://en.wikipedia.org/wiki/Anawrahta",
+		"id": "1"
+	},
+	{
+		"event": "Construction of the great temple of Angkor Wat",
+		"year": "1122 AD",
+		"website": "https://en.wikipedia.org/wiki/Angkor_Wat",
+		"id": "2"
+	},
+	{
+		"event": "Formation of the First Toungoo Empire ",
+		"year": "1510 AD",
+		"website": "https://en.wikipedia.org/wiki/First_Toungoo_Empire",
+		"id": "3"
+	},
+	{
+		"event": "Beginning of French colonization of Vietnam ",
+		"year": "1887 AD",
+		"website": "https://en.wikipedia.org/wiki/Vietnam",
+		"id": "4"
+	},
+	{
+		"event": "The demise of French Indochina",
+		"year": "1954 AD",
+		"website": "https://en.wikipedia.org/wiki/French_Indochina#First_French_Interventions",
+		"id": "5"
+	},
+	{
+		"event": "Beginning of the Vietnam War",
+		"year": "1955 AD",
+		"website": "https://en.wikipedia.org/wiki/Vietnam_War",
+		"id": "6"
+	},
+	{
+		"event": "Beginning of the Cambodian Civil War",
+		"year": "1967 AD",
+		"website": "https://en.wikipedia.org/wiki/Cambodian_Civil_War",
+		"id": "7"
+	},
+	{
+		"event": "East Timor gains independence from Indonesia ",
+		"year": "1999 AD",
+		"website": "https://en.wikipedia.org/wiki/East_Timor",
+		"id": "8"
+	}
+]
+}
