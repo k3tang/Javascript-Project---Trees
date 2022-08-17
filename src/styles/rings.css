@@ -7,7 +7,7 @@
 .container {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: space-around;
+    justify-content: flex-end;
     align-items: center;
     height: 50%;
     width: 35%;
@@ -17,18 +17,21 @@
 
 #map-container {
     display: flex;
-    align-items: flex-start;
+    align-items: flex-end;
 
 }
 
 .svg-content {
     height: 50%;
+    margin-top: 3vh;
 }
 
 #tip1 {
-    width: 1000px;
-    height: fit-content;
+    width: 50%;
+    height: 30vh;
+    overflow: scroll;
 }
+
 
 #tip-text {
     display: block;
@@ -53,3 +56,5 @@
     margin-top: 2vh;
   
 }
+
+

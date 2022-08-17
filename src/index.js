@@ -16,15 +16,6 @@ document.addEventListener("DOMContentLoaded", function(){
         .attr("id", "mainContainer")
         .attr("class", "container")
 
-    // //map
-    //    // Get the Object by ID
-    //    var a = document.getElementById("map-container");
-    // //    // Get the SVG document inside the Object tag
-    //    var svgDoc = a.contentDocument;
-    // //    // Get one of the SVG items by ID;
-    //    var svgItem = svgDoc.getElementById("path");
-    // // // Set the colour to something else
-    // // svgItem.setAttribute("fill", "lime");
 
 
     //rings 
@@ -42,13 +33,13 @@ document.addEventListener("DOMContentLoaded", function(){
     //event handler for the rings
     function callback(event) { 
         var events = data[event.target.id]
-        console.log(event)
+        console.log(event.target)
          //gives area element of map, event.target = USA tree, id = USA tree id 
        
        for (let i = radius.length; i > 0; i--) {
            var halfCircle = function (i) {
                return svg.append("path")
-                   .attr("transform", "translate(250, 230)")
+                   .attr("transform", "translate(250, 250)")
                    .attr("d", d3.arc()
                        .innerRadius(0)
                        .outerRadius(radius[i] * 2)
@@ -61,9 +52,9 @@ document.addEventListener("DOMContentLoaded", function(){
                    .attr("class", "halfCircle")
                    .attr("id", i + 1) 
                    .on("mouseover", function () { return tip.style("visibility", "visible")
-                       .html(`<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i].year}</p><p style="font-size: 2vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`);
+                       .html(`<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i].year}</p><p style="font-size: 2vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
                      }) 
-                   .on("mousemove", function () { return tip });
+                //    .on("mousemove", function () { return tip });
                 //    .on("mouseout", function () { return tip.style("visibility", "hidden"); });;
 
            }
@@ -72,18 +63,25 @@ document.addEventListener("DOMContentLoaded", function(){
         }}   
         //array of trees in the world map
        var map = document.querySelectorAll("path")
+    
        for (let i = 0; i < map.length; i++) {
            map[i].addEventListener("click", callback)
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p style="font-family: courier; font-size:1vh;"> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
-                   .style("top", (event.pageY - 100) + "px")
-                   .style("left", (event.pageX - 100) + "px");
+                   .html(`<p> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
+                   .style("top", (event.pageY - 350) + "px")
+                   .style("left", (event.pageX - 300) + "px");
+                  
+           })
+           map[i].addEventListener("mouseover", function () {
+               return tip.style("visibility", "hidden");
            })
            map[i].addEventListener("mouseout", function () {
                return tip2.style("visibility", "hidden");
            })
        }
+
+
    
         //tip for tree-rings
         var tip = d3.select("div#mainContainer")
@@ -96,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .style("border-radius", "5px")
            .style("padding", "80px");
 
-
+        //tip for world map
         var tip2 = d3.select("div#mainContainer")
             .append("div")
             .attr("id", "tip2")

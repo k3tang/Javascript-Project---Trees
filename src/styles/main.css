@@ -2,35 +2,70 @@
 @import './rings.css';
 
 
+
+#icons-bar { 
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 7vh;
+  margin: auto;
+  padding-top: 1%;
+  padding-right: 1%;
+  
+}
+
+#icons-bar a { 
+    padding: 0.5%;
+}
+#icons-bar img {
+  height: 5vh;
+}
+
 h1 {
+  display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 6vh;
-  display: block;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.35rem;
-  padding-top: 5vh;
-  padding-bottom: 3vh;
+  padding-bottom: 1vh;
+  margin-left: 2%;
+  width: 80%;
+  margin-top: -2%;
 }
+
 
 
 #all-contents {
   display: flex;
   flex-wrap: nowrap;
+  align-items: flex-start;
   box-sizing: border-box;
 }
 
 #map-container {
-  width: 70%;
+  width: 80%;
   display: block;
 }
 
 
 #map-container path {
-  fill: #2b6441;
-  transition: .6s fill;
+  fill: #548567;
+  width: 500px;
+  
 }
 
 #map-container path:hover {
   fill:aqua;
+}
+
+#tip2 > p {
+  font-family: "Roboto", sans-serif;
+  font-size: 2vh;
+  padding: 1vh;
+  line-height: 1.2;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
 }
