@@ -32,6 +32,6 @@
 
 /* Style the tab content */
 .tabcontent {
-    visibility: hidden;
+    display: none;
     border-top: none;
 }

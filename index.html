@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/main.css"/>
     <link rel="stylesheet" href="./src/styles/tabs.css">
+    <link rel="stylesheet" href="./src/styles/oldest-tree.css">
     <script src="./dist/main.js"></script>
     <script src="http://d3js.org/d3.v6.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -30,36 +31,51 @@
             var i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
-                tabcontent[i].style.visibility = "hidden";
+                tabcontent[i].style.display = "none";
             }
             tablinks = document.getElementsByClassName("tablinks");
             for (i = 0; i < tablinks.length; i++) {
                 tablinks[i].className = tablinks[i].className.replace(" active", "");
             }
-            document.getElementById(tabName).style.visibility = "visible";
+            document.getElementById(tabName).style.display = "block";
             event.currentTarget.className += " active";
+
         }
     </script>
 
     <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'ode')">An Ode to Trees</button>
+        <button class="tablinks active" onclick="openTab(event, 'ode')">An Ode to Trees</button>
         <button class="tablinks" onclick="openTab(event, 'oldest-trees')">The Oldest Trees </button>
-        <button class="tablinks" onclick="openTab(event, 'all-contents')">World Map</button>
+        <button class="tablinks" onclick="openTab(event, 'all-contents-container')">World Map</button>
     </div>
     
     
 
     <!-- Tab content -->
   
-    <div id="ode" class="tabcontent">
+    <div id="ode" class="tabcontent" style="display:block">
         <h3>Ode</h3>
         <p>Paris is the capital of France.sjhdfuiwe</p>
     </div>
+
     <div id="oldest-trees" class="tabcontent">
         <h3>Oldest Trees</h3>
-        <p>Paris is the capital of France.wewrawsef</p>
+        <div id="tree-grid">
+            <div class="grid-piece"><img src="/src/images/Tree_1.png" alt="Pinus longaeva, Great Basin bristlecone pine"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_2.png" alt="Fitzroya cupressoides, alerce"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_3.png" alt="Juniperus przewalskii, Qilian juniper"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_4.png" alt="Ficus religiosa, Bodhi tree"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_5.png" alt="Thuja occidentalis, northern white cedar"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_6.png" alt="Juniperus turkestanica, Turkestan juniper"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_7.png" alt="Adansonia digitata, baobab"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_8.png" alt="Pinus heldreichii, Heldreich’s pine"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_9.png" alt="Lagarostrobus franklinii, Huon pine"></div>
+            <div class="grid-piece"><img src="/src/images/Tree_10.png" alt="Fokienia Hodginsii, Fujian cypress"></div>
+        </div>
     </div>
-    <div id="all-contents" class="tabcontent">
+
+    <div id="all-contents-container" class="tabcontent">
+        <div id="all-contents">
 
         <?xml version="1.0" encoding="UTF-8" standalone="no"?>
         <svg id="map-container"
@@ -4733,6 +4749,7 @@
                     <path alt="Italy" id="8" transform="translate(979.22 -50.302)" d="m354.65 557.3 12.953-24.366 14.625 23.401z" />
                     <path alt="Australia" id="9" transform="translate(1953.7 696.15)" d="m354.65 557.3 12.953-24.366 14.625 23.401z" />
                     <path alt="Vietnam" id="10" transform="translate(1663.2 203.02)" d="m354.65 557.3 12.953-24.366 14.625 23.401z" /></g></svg>
+        </div>
     </div>
 
 

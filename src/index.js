@@ -14,9 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
         .select("#all-contents")
         .append("div")
         .attr("id", "mainContainer")
-        .attr("class", "container")
-
-
+        .attr("class", "container");
 
     //rings 
        var radius = [0, 10, 20, 40, 60, 70, 90, 110];
@@ -28,6 +26,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .attr("preserveAspectRatio", "xMinYMin meet")
            .attr("viewBox", "0 0 500 500")
            .attr("class", "svg-content");
+           
    
 
     //event handler for the rings
@@ -54,8 +53,6 @@ document.addEventListener("DOMContentLoaded", function(){
                    .on("mouseover", function () { return tip.style("visibility", "visible")
                        .html(`<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i].year}</p><p style="font-size: 2vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
                      }) 
-                //    .on("mousemove", function () { return tip });
-                //    .on("mouseout", function () { return tip.style("visibility", "hidden"); });;
 
            }
            halfCircle(i);
@@ -73,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
                    .style("left", (event.pageX - 300) + "px");
                   
            })
-           map[i].addEventListener("mouseover", function () {
+           map.addEventListener("mouseover", function () {
                return tip.style("visibility", "hidden");
            })
            map[i].addEventListener("mouseout", function () {

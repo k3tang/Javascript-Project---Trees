@@ -52,11 +52,12 @@ h1 {
 #map-container path {
   fill: #548567;
   width: 500px;
-  
+  cursor: pointer;
 }
 
 #map-container path:hover {
-  fill:aqua;
+  fill:rgba(218, 200, 120, 0.937);
+  
 }
 
 #tip2 > p {
