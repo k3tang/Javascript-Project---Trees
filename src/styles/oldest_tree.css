@@ -29,7 +29,9 @@ h3 {
 }
 
 #profile-text { 
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8vh;
     text-transform: none;
@@ -51,3 +53,12 @@ h3 {
     letter-spacing: inherit;
 }
 
+#start-text {
+    font-size: 2vh;
+    font-family: 'Forum', cursive;
+    line-height: 5vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    text-align: center;
+    ;
+}
