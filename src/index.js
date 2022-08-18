@@ -105,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .style("background-color", "white")
            .style("border", "solid")
            .style("border-width", "1px")
-           .style("border-radius", "20px");
+           .style("border-radius", "5px");
 
         //tip for world map
         var tip2 = d3.select("div#mainContainer")
@@ -113,7 +113,7 @@ document.addEventListener("DOMContentLoaded", function(){
             .attr("id", "tip2")
             .style("position", "absolute")
             .style("visibility", "hidden")
-            .style("border-radius", "20px")
+            .style("border-radius", "5px")
             .style("padding", "5px");
 
    })(d3);
