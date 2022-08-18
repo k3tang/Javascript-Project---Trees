@@ -1,12 +1,43 @@
-#tree-grid {
-    display: grid;
-    border: 1px solid black;
-    grid-template-columns: auto auto auto auto auto;
-    justify-content: space-evenly;
-    margin: auto;
+
+* {
+    font-family: "Roboto", sans-serif;
 }
+
+h3 { 
+    font-size: 5vh;
+    text-align: center;
+    padding: 1vw;
+}
+
+#tree-grid-1, #tree-grid-2{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+
 
 .grid-piece > img {
     height: 18vh;
     cursor: pointer;
+    padding-left: 2vw;
+    padding-right: 2vw;
 }
+
+.grid-piece > p { 
+    font-size: 2vh;
+    text-align: center;
+    padding: 1vh;
+}
+
+#profile-text { 
+    display: block;
+    font-size: 2.5vh;
+    padding: 4vh;
+    padding-left: 14vw;
+    padding-right: 14vw;
+    background-color: #f8f5f0;
+    
+}
+

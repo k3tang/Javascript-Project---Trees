@@ -1,7 +1,12 @@
 @import './reset.css';
 @import './rings.css';
+@import './oldest-tree.css';
+@import './tabs.css';
 
-
+body {
+  background-color: #e4dee0;
+  /* background-image: url('/src/images/paper_background.png') */
+}
 
 #icons-bar { 
   display: flex;
@@ -23,7 +28,7 @@
 
 h1 {
   display: block;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Forum', cursive;
   font-weight: 500;
   font-size: 6vh;
   text-align: left;
@@ -57,9 +62,6 @@ h1 {
 
 #map-container path:hover {
   fill:rgba(218, 200, 120, 0.937);
-  transform-origin: 50% 50%;
-  transform: scale(2.0);
-  
 }
 
 #tip2 > p {
@@ -70,5 +72,9 @@ h1 {
 }
 
 * {
-  font-family: "Roboto", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2cm;
+  
+
 }

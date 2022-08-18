@@ -7,7 +7,7 @@
 .container {
     display: flex;
     flex-direction: column-reverse;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     height: 50%;
     width: 35%;
@@ -30,6 +30,7 @@
     width: 50%;
     height: 30vh;
     overflow: scroll;
+    
 }
 
 
