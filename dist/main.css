@@ -1,3 +1,6 @@
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/reset.css ***!
+  \****************************************************************************************************/
 html,
 body,
 div,
@@ -128,6 +131,9 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/rings.css ***!
+  \****************************************************************************************************/
 .halfCircle:hover  {
     fill: #FAEDCD;
     opacity: 0.40;
@@ -206,6 +212,9 @@ table {
 
 
 
+/*!**********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/oldest-tree.css ***!
+  \**********************************************************************************************************/
 
 
 h3 { 
@@ -260,6 +269,9 @@ h3 {
 }
 
 
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tabs.css ***!
+  \***************************************************************************************************/
 
 .tab {
     overflow: hidden;
@@ -294,6 +306,9 @@ h3 {
     border-top: none;
 }
 
+/*!*********************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/intro_page.css ***!
+  \*********************************************************************************************************/
 
 #ode > div {
     background-repeat: no-repeat;
@@ -308,7 +323,7 @@ h3 {
 }
 
 #quote {
-    margin-top: -700px;
+    /* margin-top: -700px; */
     font-size: 5vh;
     padding-left: 50vh;
     padding-right: 50vh;
@@ -320,6 +335,79 @@ h3 {
 }
 
 
-body{background-color:#e4dee0}#icons-bar{display:flex;flex-direction:row;justify-content:end;height:7vh;margin:auto;padding-top:1%;padding-right:1%}#icons-bar a{padding:.5%}#icons-bar img{height:5vh}h1{display:block;font-family:"Forum",cursive;font-weight:500;font-size:6vh;text-align:left;letter-spacing:.35rem;margin-left:2%;width:80%;margin-top:-2%}#all-contents{display:flex;flex-wrap:nowrap;align-items:flex-start;box-sizing:border-box}#map-container{width:80%;display:block}#map-container path{fill:#548567;width:500px;cursor:pointer}#map-container path:hover{cursor:pointer}#tip2{box-shadow:5px 5px 10px #999;background-color:#fcf5e3}#tip2>p{font-size:1.5vh;padding:1vh;line-height:1;text-align:center}*{font-family:Arial,Helvetica,sans-serif;text-transform:uppercase;letter-spacing:.2cm}
+/*!*************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
+  \*************************************************************************************************************************************/
+body {
+  background-color: #e4dee0;
+}
 
-/*# sourceMappingURL=main.css.map*/
+#icons-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  height: 7vh;
+  margin: auto;
+  padding-top: 1%;
+  padding-right: 1%;
+}
+
+#icons-bar a {
+  padding: 0.5%;
+}
+
+#icons-bar img {
+  height: 5vh;
+}
+
+h1 {
+  display: block;
+  font-family: "Forum", cursive;
+  font-weight: 500;
+  font-size: 6vh;
+  text-align: left;
+  letter-spacing: 0.35rem;
+  margin-left: 2%;
+  width: 80%;
+  margin-top: -2%;
+}
+
+#all-contents {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+
+#map-container {
+  width: 80%;
+  display: block;
+}
+
+#map-container path {
+  fill: #548567;
+  width: 500px;
+  cursor: pointer;
+}
+
+#map-container path:hover {
+  cursor: pointer;
+}
+
+#tip2 {
+  box-shadow: 5px 5px 10px #999;
+  background-color: #fcf5e3;
+}
+
+#tip2 > p {
+  font-size: 1.5vh;
+  padding: 1vh;
+  line-height: 1;
+  text-align: center;
+}
+
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.2cm;
+}
