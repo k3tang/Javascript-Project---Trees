@@ -13,8 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
         .select("#all-contents")
         .append("div")
         .attr("id", "mainContainer")
-        .attr("class", "container")
-        .html("wiowej asduhisuyfiuhsdukfhksjhksjdhflk");
+        .attr("class", "container");
 
     //rings 
        var svg = d3.select("div#mainContainer")
@@ -29,10 +28,14 @@ document.addEventListener("DOMContentLoaded", function(){
     //event handler for the rings
     function callback_rings(event) { 
         var events = data[event.target.id]
+
+        var label = document.querySelector("#ring-label");
+        if (label) label.remove();
+        //remove old ring label 
         var ringLabel = d3.select("div#mainContainer")
             .append("p")
             .attr("id", "ring-label")
-            .html(`Historical events in regions compassing ${species[event.target.id].location}`)
+            .html(`Historical events in regions encompassing ${species[event.target.id].location}`)
          //gives area element of map, event.target = USA tree, id = USA tree id 
        for (let i = radius.length; i > 0; i--) {
            var halfCircle = function (i) {
