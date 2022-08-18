@@ -13,7 +13,8 @@ document.addEventListener("DOMContentLoaded", function(){
         .select("#all-contents")
         .append("div")
         .attr("id", "mainContainer")
-        .attr("class", "container");
+        .attr("class", "container")
+        .html("wiowej asduhisuyfiuhsdukfhksjhksjdhflk");
 
     //rings 
        var svg = d3.select("div#mainContainer")
