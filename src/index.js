@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function(){
         var ringLabel = d3.select("div#mainContainer")
             .append("p")
             .attr("id", "ring-label")
-            .html(`Historical events in regions encompassing ${species[event.target.id].location}`)
+            .html(`Historical events in regions encompassing ${species[(event.target.id) - 1].location}`)
          //gives area element of map, event.target = USA tree, id = USA tree id 
        for (let i = radius.length; i > 0; i--) {
            var halfCircle = function (i) {
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(){
           
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p><img src="/src/images/Tree_${i + 1}.png" alt="tree picture" height="500vh"><br>${species[i]["location"]}</p>`)
+                   .html(`<p><img src="./src/images/Tree_${i + 1}.png" alt="tree picture" height="500vh"><br>${species[i]["location"]}</p>`)
                    .style("top", (event.pageY - 700) + "px")
                    .style("left", (event.pageX - 50) + "px");      
            })
