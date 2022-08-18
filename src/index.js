@@ -1,4 +1,3 @@
-import { fetchCountries } from "./utils/index.js";
 import * as d3 from "d3";
 import { svg } from "d3";
 
