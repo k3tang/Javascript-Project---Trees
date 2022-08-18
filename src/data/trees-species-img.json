@@ -3,7 +3,8 @@
 		"id": "1",
 		"species": "Great Basin bristlecone pine (pinus longaeva)",
 		"age": "4900",
-		"location": "California, USA",
+		"location": "White Mountains, California, USA",
+		"image": "./src/images/Tree_1.png",
 		"website": "https://en.wikipedia.org/wiki/Pinus_longaeva",
 		"profile": "Pinus longaeva (commonly referred to as the Great Basin bristlecone pine, intermountain bristlecone pine, or western bristlecone pine) is a long-living species of bristlecone pine tree found in the higher mountains of California, Nevada, and Utah. Methuselah is a bristlecone pine that is 4,853 years old and has been credited as the oldest known living non-clonal organism on Earth. To protect it, the exact location of this tree is kept secret. In 1987, the bristlecone pine was designated one of Nevada's state trees."
 	},
@@ -12,6 +13,7 @@
 		"species": "Alerce (fitzroya cupressoides)",
 		"age": "3622",
 		"location": "Chile",
+		"image": "./src/images/Tree_2.png",
 		"website": "https://en.wikipedia.org/wiki/Fitzroya",
 		"profile": "Fitzroya is a monotypic genus in the cypress family. The single living species, Fitzroya cupressoides, is a tall, long-lived conifer native to the Andes mountains of southern Chile and Argentina, where it is an important member of the Valdivian temperate rain forests. Common names include alerce (\"larch\" in Spanish), lahuán (Spanish, from the Mapuche Native American name lawal), and Patagonian cypress. The genus was named in honour of Robert FitzRoy."
 	},
@@ -19,7 +21,8 @@
 		"id": "3",
 		"species": "Qilian juniper (juniperus przewalskii)",
 		"age": "2230",
-		"location": "Delingha, China",
+		"location": "Delingha, Qinghai Province, China",
+		"image": "./src/images/Tree_3.png",
 		"website": "https://en.wikipedia.org/wiki/Qilian_Mountains_conifer_forests",
 		"profile": "The Qilian Mountains Conifer Forests ecoregion is an ecoregion that consists of a series of isolated conifer forests on the northern slopes of the Qilian Mountain Range, on the northeast edge of the Tibetan Plateau in central China. The dominant trees in the ecoregion are the Qilian spruce (Picea crassifolia) and the Przewalski's juniper (Juniperus przewalskii)."
 	},
@@ -28,6 +31,7 @@
 		"species": "Bodhi tree (ficus religiosa)",
 		"age": "2217",
 		"location": "Sri Lanka",
+		"image": "./src/images/Tree_problem.png",
 		"website": "https://en.wikipedia.org/wiki/Ficus_religiosa",
 		"profile": "Ficus religiosa or sacred fig is a species of fig native to the Indian subcontinent and Indochina that belongs to Moraceae, the fig or mulberry family. It is also known as the bodhi tree, pippala tree, peepul tree, peepal tree, pipal tree, or ashvattha tree (in India and Nepal). The sacred fig is considered to have a religious significance in three major religions that originated on the Indian subcontinent, Hinduism, Buddhism and Jainism."
 	},
@@ -36,6 +40,7 @@
 		"species": "Northern white cedar (thuja occidentalis)",
 		"age": "1653",
 		"location": "Ontario, Canada",
+		"image": "./src/images/Tree_5.png",
 		"website": "https://en.wikipedia.org/wiki/Thuja_occidentalis",
 		"profile": "Thuja occidentalis, also known as northern white-cedar, eastern white-cedar, or arborvitae, is an evergreen coniferous tree, in the cypress family Cupressaceae, which is native to eastern Canada and much of the north-central and northeastern United States. It is widely cultivated as an ornamental plant."
 	},
@@ -44,6 +49,7 @@
 		"species": "Turkestan juniper (juniperus turkestanica)",
 		"age": "1437",
 		"location": "Boibar Valley 3, Pakistan",
+		"image": "./src/images/Tree_6.png",
 		"website": "https://en.wikipedia.org/wiki/Juniperus_pseudosabina",
 		"profile": "Juniperus pseudosabina is variable in shape, growing as a shrub or small tree, reaching 1–10 metres (3+1⁄2–33 feet) tall. The plant is native to the mountains of Central Asia in northern Pakistan, northeastern Afghanistan, Tajikistan, Kyrgyzstan, eastern Kazakhstan, western China, western Mongolia, and south-central Russia."
 	},
@@ -52,6 +58,7 @@
 		"species": "Baobab (adansonia digitata)",
 		"age": "1275",
 		"location": "Northeast Namibia",
+		"image": "./src/images/Tree_7.png",
 		"website": "https://en.wikipedia.org/wiki/Adansonia_digitata",
 		"profile": "Adansonia digitata, the African baobab, is the most widespread tree species of the genus Adansonia, the baobabs, and is native to the African continent and the southern Arabian Peninsula (Yemen, Oman). These are long-lived pachycauls; radiocarbon dating has shown some individuals to be over 2,000 years old. They are typically found in dry, hot savannas of sub-Saharan Africa, where they dominate the landscape and reveal the presence of a watercourse from afar."
 	},
@@ -60,6 +67,7 @@
 		"species": "Heldreich’s pine (pinus heldreichii)",
 		"age": "1229",
 		"location": "Pollino National Park, Italy",
+		"image": "./src/images/Tree_8.png",
 		"website": "https://en.wikipedia.org/wiki/Pinus_heldreichii",
 		"profile": "Pinus heldreichii (synonym P. leucodermis; family Pinaceae), the Bosnian pine or Heldreich’s pine,vis a species of pine native to mountainous areas of the Balkans and southern Italy. It is an evergreen tree up to 25–35 metres (82–115 feet) in height, and 2 m (6+1⁄2 ft) in trunk diameter."
 	},
@@ -68,6 +76,7 @@
 		"species": "Huon pine (lagarostrobus franklinii)",
 		"age": "1089",
 		"location": "Tasmania, Australia ",
+		"image": "./src/images/Tree_9.png",
 		"website": "https://en.wikipedia.org/wiki/Lagarostrobos",
 		"profile": "Lagarostrobos franklinii is a species of conifer native to the wet southwestern corner of Tasmania, Australia. It is often known as the Huon pine or Macquarie pine, although it is actually a podocarp (Podocarpaceae), not a true pine (Pinaceae). It is the sole species in the genus Lagarostrobos; one other species L. colensoi (endemic to New Zealand) formerly included has been transferred to a new genus Manoao. The genus was also formerly included in a broader circumscription of the genus Dacrydium."
 	},
@@ -75,7 +84,8 @@
 		"id": "10",
 		"species": "Fujian cypress (fokienia hodginsii)",
 		"age": "979",
-		"location": "Bidoup Mtn, Vietnam",
+		"location": "Bidoup Mtn, Lam Dong Province, Vietnam",
+		"image": "./src/images/Tree_10.png",
 		"website": "https://en.wikipedia.org/wiki/Fokienia",
 		"profile": "Fokienia is a genus of conifer tree belonging to the cypress family. It is an evergreen tree, 25–30 m tall. It has greyish-brownish bark that peels off when the tree is young. Fokienia is native from southeastern China to Northern Vietnam, west central Vietnam, and west to northern Laos."
 	}
