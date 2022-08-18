@@ -23,7 +23,6 @@
 
 .svg-content {
     height: 50%;
-    margin-top: 3vh;
 }
 
 #tip1 {
@@ -37,7 +36,6 @@
 #tip-text {
     text-align: left;
     padding: 1vh;
-    margin-top: 1vh;
     line-height: 1.2;
 }
 
@@ -65,7 +63,7 @@
     text-align: center;
     margin-bottom: 2vh;
     margin-right: 2vw;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "forum", cursive;
     line-height: 2.5vh;
     padding: 1vh;
     /* border: 1px solid black; */

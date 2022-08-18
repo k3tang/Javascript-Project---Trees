@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
                    .attr("id", i + 1) 
 
                    .on("mouseover", function () { return tip.style("visibility", "visible")
-                       .html(`<div id="tip-text"><p style="font-size: 4.5vh; padding-bottom: 1vh">${events[i].year}</p><p style="font-style: oblique; font-size: 1.8vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
+                       .html(`<div id="tip-text"><p style="font-size: 4.5vh; padding-bottom: 1vh">${events[i].year}</p><p style="font-size: 1.8vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
                      }) 
            }
            halfCircle(i);
