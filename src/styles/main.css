@@ -57,6 +57,8 @@ h1 {
 
 #map-container path:hover {
   fill:rgba(218, 200, 120, 0.937);
+  transform-origin: 50% 50%;
+  transform: scale(2.0);
   
 }
 

@@ -3,7 +3,7 @@ import * as d3 from "d3";
 import { svg } from "d3";
 
 const data = require("/src/data/tree_history.json");
-const species = require("/src/data/tree_species.json");
+const species = require("/src/data/tree_species_pro.json");
 
 
 document.addEventListener("DOMContentLoaded", function(){
@@ -30,9 +30,8 @@ document.addEventListener("DOMContentLoaded", function(){
    
 
     //event handler for the rings
-    function callback(event) { 
+    function callback_rings(event) { 
         var events = data[event.target.id]
-        console.log(event.target)
          //gives area element of map, event.target = USA tree, id = USA tree id 
        
        for (let i = radius.length; i > 0; i--) {
@@ -62,7 +61,8 @@ document.addEventListener("DOMContentLoaded", function(){
        var map = document.querySelectorAll("path")
     
        for (let i = 0; i < map.length; i++) {
-           map[i].addEventListener("click", callback)
+           map[i].addEventListener("click", callback_rings)
+
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
                    .html(`<p> Tree: ${species[i]["species"]} <br> Location: ${species[i]["location"]} <br> Age: ${species[i]["age"]} years old </p>`)
@@ -70,7 +70,7 @@ document.addEventListener("DOMContentLoaded", function(){
                    .style("left", (event.pageX - 300) + "px");
                   
            })
-           map.addEventListener("mouseover", function () {
+           map[i].addEventListener("mouseover", function () {
                return tip.style("visibility", "hidden");
            })
            map[i].addEventListener("mouseout", function () {
@@ -78,6 +78,21 @@ document.addEventListener("DOMContentLoaded", function(){
            })
        }
 
+       //oldest trees profile functions 
+
+       function callback_profile(event) { 
+            var profileInfo = species[(event.target.parentNode.id) - 1]
+            var profileBox = document.querySelector("div#profile-text")
+            //fix this 
+             profileBox.innerHtml(`<p>${profileInfo.profile}</p>`)
+       }
+
+       var profile = document.querySelectorAll("div.grid-piece img")
+
+
+       for(let i = 0; i < profile.length; i++) { 
+            profile[i].addEventListener("click", callback_profile)
+       }
 
    
         //tip for tree-rings
@@ -105,6 +120,5 @@ document.addEventListener("DOMContentLoaded", function(){
 
 
    })(d3);
-   
 
 })
