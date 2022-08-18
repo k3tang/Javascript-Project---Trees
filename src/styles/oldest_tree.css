@@ -20,12 +20,12 @@ h3 {
     cursor: pointer;
     padding-left: 2vw;
     padding-right: 2vw;
-    filter: sepia(100%);
+    /* filter: sepia(100%); */
 
 }
 
 .grid-piece :hover {
-    filter: none;
+    filter: brightness(150%);
 }
 
 .grid-piece > p { 
