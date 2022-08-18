@@ -20,6 +20,12 @@ h3 {
     cursor: pointer;
     padding-left: 2vw;
     padding-right: 2vw;
+    filter: sepia(100%);
+
+}
+
+.grid-piece :hover {
+    filter: none;
 }
 
 .grid-piece > p { 
@@ -28,16 +34,21 @@ h3 {
     padding: 1vh;
 }
 
+/* .grid-piece.active > img {
+   border: 1px solid black;
+    height: 18vh;
+    cursor: pointer;
+    padding-left: 2vw;
+    padding-right: 2vw;
+} */
+
 #profile-text { 
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     text-transform: none;
     letter-spacing: 2px;
     line-height: 2vh;
-    padding: 4vh;
+    padding: 2.5vh;
     padding-left: 14vw;
     padding-right: 14vw;
     background-color: #f4eee9;
@@ -47,7 +58,7 @@ h3 {
 #profile-text > a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.8vh;
+    font-size: 1.7vh;
     line-height: inherit;
     text-transform: inherit;
     letter-spacing: inherit;

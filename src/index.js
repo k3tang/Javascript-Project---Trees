@@ -1,5 +1,5 @@
 import * as d3 from "d3";
-import { svg } from "d3";
+import { active, svg } from "d3";
 
 const data = require("/src/data/tree_history.json");
 const species = require("/src/data/trees-species-img.json");
@@ -87,7 +87,7 @@ document.addEventListener("DOMContentLoaded", function(){
            var profileInfo = species[(event.target.parentNode.id) - 1]
            var textBox = document.querySelector("#profile-text");
             console.log(textBox)
-           textBox.innerHTML = `<p id="tree-name">Tree Species: ${profileInfo.species}</p><br><p id="tree-age">Age: ${profileInfo.age}</p><br>${profileInfo.profile} <a href="${profileInfo.website}">Learn More...<a>`
+           textBox.innerHTML = `<p id="tree-name">${profileInfo.location}:<br>${profileInfo.species}</p><br><p id="tree-age">Age: ${profileInfo.age}</p><br>${profileInfo.profile} <a href="${profileInfo.website}">Learn More...<a>`
        };
 
        var profile = document.querySelectorAll("div.grid-piece img");
@@ -115,6 +115,9 @@ document.addEventListener("DOMContentLoaded", function(){
             .style("visibility", "hidden")
             .style("border-radius", "5px")
             .style("padding", "5px");
+
+
+
 
    })(d3);
 

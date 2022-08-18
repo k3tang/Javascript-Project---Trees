@@ -51,30 +51,50 @@
     <!-- Tab content -->
   
     <div id="ode" class="tabcontent" style="display:block">
-        <!-- <h3>Ode</h3> -->
         <div style="background-image: url('./src/images/trees-background.png'); height: 85vh; overflow: visible;"><p id="quote">“This is not our world with trees in it. It's a world of trees, where humans have just arrived.”
         <p id="author">― Richard Powers, The Overstory</p>
         </p></div>
         
     </div>
 
+    <!-- tree selector hover  -->
+
+    <!-- <script>
+        function openTree(event, treeName) {
+            var i, treelinks;
+            treelinks = document.getElementsByClassName("grid-piece");
+            for (i = 0; i < treelinks.length; i++) {
+                treelinks[i].className = treelinks[i].className.replace(" active", "");
+            }
+            document.getElementById(treeName).style.backgroundColor = none;
+            event.currentTarget.className += " active";
+
+        }
+
+        var pieces = document.getElementsByClassName("grid-piece")
+        for(let i = 0; i < pieces.length; i++) {
+            pieces[i].addEventListener("click", openTree(pieces[i]))
+        }
+    </script> -->
+
+
 <div id="oldest-trees" class="tabcontent">
         <div id="tree-grid-1">
-            <div id="1" class="grid-piece"><img src="./src/images/Tree_1.png" alt="Pinus longaeva, Great Basin bristlecone pine"><p>USA</p></div>
-            <div id="2" class="grid-piece"><img src="./src/images/Tree_2.png" alt="Fitzroya cupressoides, alerce"><p>Chile</p></div>
-            <div id="3" class="grid-piece"><img src="./src/images/Tree_3.png" alt="Juniperus przewalskii, Qilian juniper"><p>China</p></div>
-            <div id="4" class="grid-piece"><img src="./src/images/Tree_problem.png" alt="Ficus religiosa, Bodhi tree"><p>Sri Lanka</p></div>
-            <div id="5" class="grid-piece"><img src="./src/images/Tree_5.png" alt="Thuja occidentalis, northern white cedar"><p>Canada</p></div>
+            <div id="1" class="grid-piece"><img id="img1" src="./src/images/Tree_1.png" alt="Pinus longaeva, Great Basin bristlecone pine"><p>USA</p></div>
+            <div id="2" class="grid-piece"><img id="img2" src="./src/images/Tree_2.png" alt="Fitzroya cupressoides, alerce"><p>Chile</p></div>
+            <div id="3" class="grid-piece"><img id="img3" src="./src/images/Tree_3.png" alt="Juniperus przewalskii, Qilian juniper"><p>China</p></div>
+            <div id="4" class="grid-piece"><img id="img4" src="./src/images/Tree_problem.png" alt="Ficus religiosa, Bodhi tree"><p>Sri Lanka</p></div>
+            <div id="5" class="grid-piece"><img id="img5" src="./src/images/Tree_5.png" alt="Thuja occidentalis, northern white cedar"><p>Canada</p></div>
         </div>
 
        <div id="profile-text"><p id="start-text">Select a location to learn more about the longest living tree in that region.</p></div>
 
         <div id="tree-grid-2">
-            <div id="6" class="grid-piece"><img src="./src/images/Tree_6.png" alt="Juniperus turkestanica, Turkestan juniper"><p>Pakistan</p></div>
-            <div id="7" class="grid-piece"><img src="./src/images/Tree_7.png" alt="Adansonia digitata, baobab"><p>Namibia</p></div>
-            <div id="8" class="grid-piece"><img src="./src/images/Tree_8.png" alt="Pinus heldreichii, Heldreich’s pine"><p>Italy</p></div>
-            <div id="9" class="grid-piece"><img src="./src/images/Tree_9.png" alt="Lagarostrobus franklinii, Huon pine"><p>Australia</p></div>
-            <div id="10" class="grid-piece"><img src="./src/images/Tree_10.png" alt="Fokienia Hodginsii, Fujian cypress"><p>Vietnam</p></div>
+            <div id="6" class="grid-piece"><img id="img6" src="./src/images/Tree_6.png" alt="Juniperus turkestanica, Turkestan juniper"><p>Pakistan</p></div>
+            <div id="7" class="grid-piece"><img id="img7" src="./src/images/Tree_7.png" alt="Adansonia digitata, baobab"><p>Namibia</p></div>
+            <div id="8" class="grid-piece"><img id="img8" src="./src/images/Tree_8.png" alt="Pinus heldreichii, Heldreich’s pine"><p>Italy</p></div>
+            <div id="9" class="grid-piece"><img id="img9" src="./src/images/Tree_9.png" alt="Lagarostrobus franklinii, Huon pine"><p>Australia</p></div>
+            <div id="10" class="grid-piece"><img id="img10" src="./src/images/Tree_10.png" alt="Fokienia Hodginsii, Fujian cypress"><p>Vietnam</p></div>
         </div>
     </div>
 
