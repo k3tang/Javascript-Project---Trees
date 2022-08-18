@@ -69,8 +69,8 @@ document.addEventListener("DOMContentLoaded", function(){
           
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p><img class="tree-tip" src="./src/images/Tree_${i + 1}.png" alt="tree picture" ><br>${species[i]["location"]}</p>`)
-                   .style("top", (event.pageY - 700) + "px")
+                   .html(`<p><img class="tree-tip" src="./src/images/Tree_${i + 1}.png" alt="tree picture" height="150vh" ><br>${species[i]["location"]}</p>`)
+                   .style("top", (event.pageY - 200) + "px")
                    .style("left", (event.pageX - 50) + "px");      
            })
            map[i].addEventListener("mouseover", function () {
@@ -105,8 +105,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .style("background-color", "white")
            .style("border", "solid")
            .style("border-width", "1px")
-           .style("border-radius", "20px")
-           .style("padding", "80px");
+           .style("border-radius", "20px");
 
         //tip for world map
         var tip2 = d3.select("div#mainContainer")
