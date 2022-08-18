@@ -322,6 +322,7 @@ h3 {
 }
 
 #quote {
+    margin-top: -15vh;
     font-size: 5vh;
     padding-left: 50vh;
     padding-right: 50vh;
@@ -407,5 +408,5 @@ h1 {
 * {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
-  letter-spacing: 0.2cm;
+  letter-spacing: 0.12cm;
 }

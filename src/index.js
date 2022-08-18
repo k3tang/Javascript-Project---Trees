@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function(){
           
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
-                   .html(`<p><img src="./src/images/Tree_${i + 1}.png" alt="tree picture" height="500vh"><br>${species[i]["location"]}</p>`)
+                   .html(`<p><img class="tree-tip" src="./src/images/Tree_${i + 1}.png" alt="tree picture" ><br>${species[i]["location"]}</p>`)
                    .style("top", (event.pageY - 700) + "px")
                    .style("left", (event.pageX - 50) + "px");      
            })
