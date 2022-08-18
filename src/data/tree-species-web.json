@@ -3,7 +3,7 @@
 		"id": "1",
 		"species": "Great Basin bristlecone pine (pinus longaeva)",
 		"age": "4900",
-		"location": "White Mountains, California, USA",
+		"location": "California, USA",
 		"website": "https://en.wikipedia.org/wiki/Pinus_longaeva",
 		"profile": "Pinus longaeva (commonly referred to as the Great Basin bristlecone pine, intermountain bristlecone pine, or western bristlecone pine) is a long-living species of bristlecone pine tree found in the higher mountains of California, Nevada, and Utah. Methuselah is a bristlecone pine that is 4,853 years old and has been credited as the oldest known living non-clonal organism on Earth. To protect it, the exact location of this tree is kept secret. In 1987, the bristlecone pine was designated one of Nevada's state trees."
 	},
@@ -19,7 +19,7 @@
 		"id": "3",
 		"species": "Qilian juniper (juniperus przewalskii)",
 		"age": "2230",
-		"location": "Delingha, Qinghai Province, China",
+		"location": "Delingha, China",
 		"website": "https://en.wikipedia.org/wiki/Qilian_Mountains_conifer_forests",
 		"profile": "The Qilian Mountains Conifer Forests ecoregion is an ecoregion that consists of a series of isolated conifer forests on the northern slopes of the Qilian Mountain Range, on the northeast edge of the Tibetan Plateau in central China. The dominant trees in the ecoregion are the Qilian spruce (Picea crassifolia) and the Przewalski's juniper (Juniperus przewalskii)."
 	},
@@ -75,7 +75,7 @@
 		"id": "10",
 		"species": "Fujian cypress (fokienia hodginsii)",
 		"age": "979",
-		"location": "Bidoup Mtn, Lam Dong Province, Vietnam",
+		"location": "Bidoup Mtn, Vietnam",
 		"website": "https://en.wikipedia.org/wiki/Fokienia",
 		"profile": "Fokienia is a genus of conifer tree belonging to the cypress family. It is an evergreen tree, 25–30 m tall. It has greyish-brownish bark that peels off when the tree is young. Fokienia is native from southeastern China to Northern Vietnam, west central Vietnam, and west to northern Laos."
 	}

@@ -2,10 +2,10 @@
 @import './rings.css';
 @import './oldest-tree.css';
 @import './tabs.css';
+@import './intro_page.css';
 
 body {
   background-color: #e4dee0;
-  /* background-image: url('/src/images/paper_background.png') */
 }
 
 #icons-bar { 
@@ -33,7 +33,6 @@ h1 {
   font-size: 6vh;
   text-align: left;
   letter-spacing: 0.35rem;
-  padding-bottom: 1vh;
   margin-left: 2%;
   width: 80%;
   margin-top: -2%;
@@ -64,11 +63,15 @@ h1 {
   fill:rgba(218, 200, 120, 0.937);
 }
 
+#tip2 {
+  box-shadow: 5px 5px 10px #999;
+  background-color: rgba(248, 239, 248, 0.826);
+}
 #tip2 > p {
-  font-family: "Roboto", sans-serif;
-  font-size: 2vh;
+  font-size: 1.5vh;
   padding: 1vh;
-  line-height: 1.2;
+  line-height: 1;
+  text-align: center;
 }
 
 * {

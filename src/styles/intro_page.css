@@ -1,0 +1,25 @@
+
+#ode > div {
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+    opacity: 0.85;
+    box-shadow: 0 0 20px 50px #e4dee0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#quote {
+    margin-top: -700px;
+    font-size: 5vh;
+    padding-left: 50vh;
+    padding-right: 50vh;
+}
+
+#author {
+    font-size: 2vh;
+    padding: 2vh;
+}
+

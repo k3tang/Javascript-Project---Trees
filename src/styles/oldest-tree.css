@@ -1,7 +1,4 @@
 
-* {
-    font-family: "Roboto", sans-serif;
-}
 
 h3 { 
     font-size: 5vh;
@@ -13,8 +10,8 @@ h3 {
     display: flex;
     justify-content: center;
     margin: auto;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
 }
 
 
@@ -33,11 +30,24 @@ h3 {
 
 #profile-text { 
     display: block;
-    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    line-height: 1.5cm;
+    text-transform: none;
+    letter-spacing: 4px;
     padding: 4vh;
     padding-left: 14vw;
     padding-right: 14vw;
-    background-color: #f8f5f0;
-    
+    background-color: #f4eee9;
+    height: 17vh;   
+}
+
+#profile-text > a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.8vh;
+    line-height: inherit;
+    text-transform: inherit;
+    letter-spacing: inherit;
 }
 
