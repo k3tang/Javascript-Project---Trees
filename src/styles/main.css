@@ -60,13 +60,14 @@ h1 {
 }
 
 #map-container path:hover {
-  fill:rgba(218, 200, 120, 0.937);
+  cursor: pointer;
 }
 
 #tip2 {
   box-shadow: 5px 5px 10px #999;
-  background-color: rgba(248, 239, 248, 0.826);
+  background-color: #fcf5e3;
 }
+
 #tip2 > p {
   font-size: 1.5vh;
   padding: 1vh;

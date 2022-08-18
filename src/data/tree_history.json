@@ -8,7 +8,7 @@
 	},
 	{
 		"event": "Poverty Point culture in northeastern Louisiana features stone work, flintknapping, earthenware, and effigy, conical, and platform mounds, as well as planned settlements on concentric earthen ridges",
-		"year": "2000 - 1000 BC",
+		"year": "2000 BC",
 		"website": "https://en.wikipedia.org/wiki/Poverty_Point_culture",
 		"id": "2"
 	},
@@ -52,7 +52,7 @@
 	"2" : [
 	{
 		"event": "Development of Mesoamerican cultures during the Formative Period including the Mayan, Aztec, and Olmec cultures",
-		"year": "2000 BC - 250 AD",
+		"year": "2000 BC",
 		"website": "https://en.wikipedia.org/wiki/List_of_pre-Columbian_cultures",
 		"id": "1"
 	},
@@ -151,20 +151,20 @@
 ],
 	"4": [
 	{
-		"event": "The reign of the Mauryan Empire, the largest pan-Indian empire",
-		"year": "322 BC - 185 BC",
+		"event": "The reign of the Mauryan Empire begins, the largest pan-Indian empire",
+		"year": "322 BC",
 		"website": "https://en.wikipedia.org/wiki/Maurya_Empire#Ashoka",
 		"id": "1"
 	},
 	{
 		"event": "The compilation of Charaka Samhita, a Sanskrit test on Ayurveda",
-		"year": "200 - 100 BC",
+		"year": "200",
 		"website": "https://en.wikipedia.org/wiki/Charaka_Samhita",
 		"id": "2"
 	},
 	{
-		"event": "The reign of the Gupta Empire, the golden age of India",
-		"year": "319 - 467 AD",
+		"event": "The reign of the Gupta Empire begins, the golden age of India",
+		"year": "319 AD",
 		"website": "https://en.wikipedia.org/wiki/Gupta_Empire",
 		"id": "3"
 	},
@@ -201,26 +201,26 @@
 ],
 	"5": [
 	{
-		"event": "The Hopewell tradition era - an ancient Native American civilization connected by a network of trade routes ",
-		"year": "100BC - 500AD",
+		"event": "The Hopewell tradition era begins- an ancient Native American civilization connected by a network of trade routes ",
+		"year": "100 BC",
 		"website": "https://en.wikipedia.org/wiki/Hopewell_tradition#Origins",
 		"id": "1"
 	},
 	{
-		"event": "The Norse build small settlement of  L'Anse aux Meadows in Newfoundland",
+		"event": "The Norse build small settlement of L'Anse aux Meadows in Newfoundland",
 		"year": "1000 AD",
 		"website": "https://en.wikipedia.org/wiki/L%27Anse_aux_Meadows",
 		"id": "2"
 	},
 	{
 		"event": "The formation of the Iroquois Confederacy ",
-		"year": "1142 AD ",
+		"year": "1142 AD",
 		"website": "https://en.wikipedia.org/wiki/Iroquois#Formation_of_the_League",
 		"id": "3"
 	},
 	{
 		"event": "\"Canada\" was coined and clained by the French explorer Jacques Cartier for King Francis I",
-		"year": "1534 AD ",
+		"year": "1534 AD",
 		"website": "https://en.wikipedia.org/wiki/Jacques_Cartier",
 		"id": "4"
 	},
@@ -252,7 +252,7 @@
 	"6": [
 	{
 		"event": "Birth of Muhammad ibn Abdullah, founder of Islam",
-		"year": "570 AD ",
+		"year": "570 AD",
 		"website": "https://en.wikipedia.org/wiki/Muhammad",
 		"id": "1"
 	},
@@ -270,13 +270,13 @@
 	},
 	{
 		"event": "The beginning of the Crusades in the Holy Land",
-		"year": "1095 AD ",
+		"year": "1095 AD",
 		"website": "https://en.wikipedia.org/wiki/Crusades",
 		"id": "4"
 	},
 	{
 		"event": "The rise of the Ottoman Empire",
-		"year": "1299 AD ",
+		"year": "1299 AD",
 		"website": "https://en.wikipedia.org/wiki/Ottoman_Empire",
 		"id": "5"
 	},

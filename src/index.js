@@ -22,57 +22,48 @@ document.addEventListener("DOMContentLoaded", function(){
            .attr("preserveAspectRatio", "xMinYMin meet")
            .attr("viewBox", "0 0 500 500")
            .attr("class", "svg-content");
+
            
-    //    var radius = [0, 10, 20, 40, 60, 70, 90, 110];
+       var radius = [0, 10, 20, 40, 60, 70, 90, 110];
 
     //event handler for the rings
     function callback_rings(event) { 
         var events = data[event.target.id]
-        var rings = document.querySelectorAll(".ring-path")
-        
-        for (let i = 0; i < rings.length; i++) {
-            rings[i].addEventListener("mouseover", function () {
-                { tip.innerHTML = `<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i + 1].year}</p><p style="font-size: 2vh;">${events[i + 1].event}</p><br><p id="tip-link"><a href=${events[i + 1].website}>Learn More</a></p></div>`; 
-                tip.style.visibility = "visible";
-                console.log(tip)
-                    //fix this
-                }
-            })
-        }
-
-        
+        var ringLabel = d3.select("div#mainContainer")
+            .append("p")
+            .attr("id", "ring-label")
+            .html(`Historical events in regions compassing ${species[event.target.id].location}`)
          //gives area element of map, event.target = USA tree, id = USA tree id 
-    //     console.log(events)
-    //    for (let i = radius.length; i > 0; i--) {
-    //        var halfCircle = function (i) {
-    //            return svg.append("path")
-    //                .attr("transform", "translate(250, 250)")
-    //                .attr("d", d3.arc()
-    //                    .innerRadius(0)
-    //                    .outerRadius(radius[i] * 2)
-    //                    .startAngle(-Math.PI / 2)
-    //                    .endAngle(Math.PI / 2)
-                //    )
-                //    .attr("stroke", "#E7C8A0")
-                //    .attr("stroke-width", "3px")
-                //    .attr("fill", "transparent")
-                //    .attr("class", "halfCircle")
-                //    .attr("id", i + 1) 
+       for (let i = radius.length; i > 0; i--) {
+           var halfCircle = function (i) {
+               return svg.append("path")
+                   .attr("transform", "translate(250, 250)")
+                   .attr("d", d3.arc()
+                       .innerRadius(0)
+                       .outerRadius(radius[i] * 2)
+                       .startAngle(-Math.PI / 2)
+                       .endAngle(Math.PI / 2)
+                   )
+                   .attr("stroke", "#f4eee9")
+                   .attr("stroke-width", "5px")
+                   .attr("fill", "transparent")
+                   .attr("class", "halfCircle")
+                   .attr("id", i + 1) 
 
-                //    .on("mouseover", function () { return tip.style("visibility", "visible")
-                //        .html(`<div id="tip-text"><p style="font-size: 5vh; padding-bottom: 1vh;">${events[i].year}</p><p style="font-size: 2vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
-                //      }) 
-
+                   .on("mouseover", function () { return tip.style("visibility", "visible")
+                       .html(`<div id="tip-text"><p style="font-size: 4.5vh; padding-bottom: 1vh">${events[i].year}</p><p style="font-style: oblique; font-size: 1.8vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
+                     }) 
            }
-           
-        // }}   
+           halfCircle(i);
+        }}   
 
-      
+    
         //array of trees in the world map
        var map = document.querySelectorAll(".map-path")
        
        for (let i = 0; i < map.length; i++) {
            map[i].addEventListener("click", callback_rings)
+          
            map[i].addEventListener("mouseover", function () {
                return tip2.style("visibility", "visible")
                    .html(`<p><img src="/src/images/Tree_${i + 1}.png" alt="tree picture" height="500vh"><br>${species[i]["location"]}</p>`)
@@ -90,9 +81,9 @@ document.addEventListener("DOMContentLoaded", function(){
        //oldest trees profile functions 
 
        function callback_profile(event) { 
-            var profileInfo = species[(event.target.parentNode.id) - 1]
-            //fix this 
+           var profileInfo = species[(event.target.parentNode.id) - 1]
            var textBox = document.querySelector("#profile-text");
+            console.log(textBox)
            textBox.innerHTML = `<p id="tree-name">Tree Species: ${profileInfo.species}</p><br><p id="tree-age">Age: ${profileInfo.age}</p><br>${profileInfo.profile} <a href="${profileInfo.website}">Learn More...<a>`
        };
 
@@ -111,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function(){
            .style("background-color", "white")
            .style("border", "solid")
            .style("border-width", "1px")
-           .style("border-radius", "5px")
+           .style("border-radius", "20px")
            .style("padding", "80px");
 
         //tip for world map
