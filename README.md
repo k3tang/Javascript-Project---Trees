@@ -1,4 +1,4 @@
-#Evergreen Overstory 
+# Evergreen Overstory 
 
 Creating a visual presentation of the oldest living trees and the historical events that occurred during their lifespan. Users are able to select the historical data for each tree and learn more via the external links supplied. 
 
