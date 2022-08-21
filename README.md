@@ -10,10 +10,10 @@ Creating a visual presentation of the oldest living trees and the historical eve
 * CSS and HTML
 * D3
 
-##Data
+## Data
 Data was obtained from [OLDLIST](https://www.ldeo.columbia.edu/~adk/oldlisteast/) a database of ancient trees and their ages and [Wikipedia](https://www.wikipedia.org/) for details on historical events. 
 
-##Features 
+## Features 
 <img width="1433" alt="Screen Shot 2022-08-21 at 4 23 45 PM" src="https://user-images.githubusercontent.com/107089418/185815263-b32e30ea-20dd-462b-8694-3d339f44354c.png">
 
 ### Tree Profiles 
