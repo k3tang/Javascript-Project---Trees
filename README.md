@@ -1,52 +1,99 @@
-JS Project Proposal: Trees
+# Evergreen Overstory 
 
-Background: 
-“This is not our world with trees in it. It’s a world of trees, where humans have just arrived.” 
-- Richard Powers, The Overstory
+Creating a visual presentation of the oldest living trees and the historical events that occurred during their lifespan. Users are able to select the historical data for each tree and learn more via the external links supplied. 
 
-Trees have been around for millions of years, silently powering the Earth with life. The goal of this project is to demonstrate the majesty of trees by juxtaposing their presence with our human existence. 
-
-The project begins with an interactive world map of famous trees in history. A window with a short biography on the tree will appear when selected. 
+[Live Link](https://k3tang.github.io/Javascript-Project---Trees/)
 
 
-The world map can be toggled to change the display to a map focusing on the extraordinary lifespan of trees. When the user clicks on certain trees, an interactive tree-ring will appear. The rings will pair the tree’s lifespan with significant historical events of its native region. 
+## Technologies 
+* Javascript
+* CSS and HTML
+* D3
 
-Lastly, the user can interact with a tree diagram illustrating plant taxonomy. When the user clicks on the child nodes of the diagram, a “seed” will fall and a sapling will appear with a short biography of the selected tree. 
+## Data
+Data was obtained from [OLDLIST](https://www.ldeo.columbia.edu/~adk/oldlisteast/) a database of ancient trees and their ages and [Wikipedia](https://www.wikipedia.org/) for details on historical events. 
 
-Functionality & MVPs: 
-With this data visualization, the user will be able to:
-Select trees on a world map
-Select different map contents with a toggle function 
-Select and expand clickable features on a tree-ring containing historical events 
-Select trees within a tree diagram to render more information
-Additionally, the project will contain: 
-A production README
-A navigation bar
+## Features 
+<img width="1429" alt="Screen Shot 2022-08-21 at 4 57 14 PM" src="https://user-images.githubusercontent.com/107089418/185816705-5534d548-5d47-4b0b-bfff-8316d562ce1f.png">
 
-Wireframes: 
-https://wireframe.cc/U5lruJ
+<img width="1433" alt="Screen Shot 2022-08-21 at 4 23 45 PM" src="https://user-images.githubusercontent.com/107089418/185815263-b32e30ea-20dd-462b-8694-3d339f44354c.png">
 
-Navigation bar - includes links to the project’s Github repo and my LinkedIn. It will will also contain ability to navigate between the World Map and Tree Diagram
-World map can be toggled for a different kind display
-A window will appear in the world map with information on the selection
-Tree-ring will appear when an appropriate selection is made. 
-Tree diagram will have clickable child nodes
+### Tree Profiles 
+An interactive profile page of the oldest trees is rendered using Vanilla DOM functionalities. 
+
+```javascript 
+ function callback_profile(event) { 
+           var profileInfo = species[(event.target.parentNode.id) - 1]
+           var textBox = document.querySelector("#profile-text");
+            console.log(textBox)
+           textBox.innerHTML = `<p id="tree-name">${profileInfo.location}:<br>${profileInfo.species}</p><br><p id="tree-age">Age: ${profileInfo.age}</p><br>${profileInfo.profile} <a href="${profileInfo.website}">Learn More...<a>`
+       };
+
+       var profile = document.querySelectorAll("div.grid-piece img");
+       
+       for(let i = 0; i < profile.length; i++) { 
+           profile[i].addEventListener("click", callback_profile)
+       };
+```
 
 
-Technologies, Libraries, APIs:
-This project will use the following technologies for implementation: 
-The Encyclopedia Britannica API to render historical data 
-The D3 library to render interactive elements
-Webpack to bundle the source Javascript code 
-Npm for dependency management 
+### Tree Ring Timeline 
+D3.js was used to create the tree ring shaped timeline reflecting the list of historical events in chronological order. A tooltip was incorporated to display historical details.
 
-Implementation Timeline: 
-Friday and Weekend: Setup project, incorporate D3 Library and Encyclopedia Britannia API. Create world map, pop up window, tree-ring, and tree diagram scaffold. Incorporate appropriate illustrations and seed data. Get world map and buildings working correctly.
+```javascript 
+  for (let i = radius.length; i > 0; i--) {
+           var halfCircle = function (i) {
+               return svg.append("path")
+                   .attr("transform", "translate(250, 250)")
+                   .attr("d", d3.arc()
+                       .innerRadius(0)
+                       .outerRadius(radius[i] * 2)
+                       .startAngle(-Math.PI / 2)
+                       .endAngle(Math.PI / 2)
+                   )
+                   .attr("stroke", "#f4eee9")
+                   .attr("stroke-width", "5px")
+                   .attr("fill", "transparent")
+                   .attr("class", "halfCircle")
+                   .attr("id", i + 1) 
 
-Monday: Start using Encyclopedia API to generate information to be rendered in the tree-ring. Ensure that it is working appropriately. 
+                   .on("mouseover", function () { return tip.style("visibility", "visible")
+                       .html(`<div id="tip-text"><p style="font-size: 4.5vh; padding-bottom: 1vh">${events[i].year}</p><p style="font-size:           1.8vh;">${events[i].event}</p><br><p id="tip-link"><a href=${events[i].website}>Learn More</a></p></div>`)
+                     }) 
+           }
+           halfCircle(i);
+        }}   
+```
 
-Tuesday: Ensure the tree diagram is able to be interactive and render appropriate actions of seed falling and tree sapling appearing.
+### World Map 
+An svg element was created using Inkscape to allow for specific coordinates on the world map to be interactive. Information for each tree was subsequently attached to the coordinates. Event listeners were used to create interactive functionalities for the coordinates. 
 
-Wednesday: Finish implementation of all three elements and focus on styling. 
 
-Thursday Morning: Deploy to Github. 
+```javascript 
+var map = document.querySelectorAll(".map-path")
+       
+       for (let i = 0; i < map.length; i++) {
+           map[i].addEventListener("click", callback_rings)
+          
+           map[i].addEventListener("mouseover", function () {
+               return tip2.style("visibility", "visible")
+                   .html(`<p><img class="tree-tip" src="${species[i]["image"]}" alt="tree picture" height="150vh" padding-bottom="20px"><br>${species[i]["location"]}</p>`)
+                   .style("top", (event.pageY - 200) + "px")
+                   .style("left", (event.pageX - 50) + "px");      
+           })
+           map[i].addEventListener("mouseover", function () {
+               return tip.style("visibility", "hidden");
+           })
+           map[i].addEventListener("mouseout", function () {
+               return tip2.style("visibility", "hidden");
+           })
+       }
+```
+
+## Future Implementations 
+* Show a home page rendering famous related quotes changing on a timer function. 
+
+
+
+
+
