@@ -3,48 +3,56 @@
 	{
 		"event": "People of the Stallings Culture on the Savannah River begin making pottery",
 		"year": "2888 BC",
+		"age" : "55",
 		"website": "https://en.wikipedia.org/wiki/Archaic_period_(North_America)",
 		"id": "1"
 	},
 	{
 		"event": "Poverty Point culture in northeastern Louisiana features stone work, flintknapping, earthenware, and effigy, conical, and platform mounds, as well as planned settlements on concentric earthen ridges",
 		"year": "2000 BC",
+		"age" : "943",
 		"website": "https://en.wikipedia.org/wiki/Poverty_Point_culture",
 		"id": "2"
 	},
 	{
 		"event": "Ancestral Pueblo culture dominates much of the American Southwest.",
 		"year": "900 AD",
+		"age" : "3,843",
 		"website": "https://en.wikipedia.org/wiki/Ancestral_Puebloans",
 		"id": "3"
 	},
 	{
 		"event": "Christopher Columbus sails to India and stumbles on to the American continent",
 		"year": "1492 AD",
+		"age" : "4,435",
 		"website": "https://en.wikipedia.org/wiki/Columbian_exchange",
 		"id": "4"
 	},
 	{
 		"event": "Beginning of the American Revolutionary War",
-		"year": "1775 AD ",
+		"year": "1775 AD",
+		"age" : "4,718",
 		"website": "https://en.wikipedia.org/wiki/American_Revolution",
 		"id": "5"
 	},
 	{
 		"event": "Beginning of the American Civil War",
 		"year": "1861 AD",
+		"age" : "4,804",
 		"website": "https://en.wikipedia.org/wiki/American_Civil_War",
 		"id": "6"
 	},
 	{
 		"event": "Beginning of the Civil Rights Movement",
 		"year": "1954 AD",
+		"age" : "4,897",
 		"website": "https://en.wikipedia.org/wiki/Civil_rights_movement",
 		"id": "7"
 	},
 	{
 		"event": "United States and most of Europe enters the longest post–World War II recession, often called the \"Great Recession\"",
 		"year": "2008 AD",
+		"age" : "4,951",
 		"website": "https://en.wikipedia.org/wiki/Great_Recession_in_the_United_States",
 		"id": "8"
 	}
