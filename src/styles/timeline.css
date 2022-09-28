@@ -1,0 +1,157 @@
+#all-contents-container {
+    height: 110vh;
+}
+
+.intro-scroll {
+  height: 66vh;
+  width: 100vw;
+}
+
+#methuselah-photo {
+  width: 100vw;
+  position: fixed;
+  top: -99px;
+  z-index: -1;
+  opacity: 75%;
+
+}
+
+.intro-text-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 70vh;
+  padding: 3vh;
+  background-color: #fbebebdb;
+}
+
+.intro-text-container h1 {
+  display: block;
+  font-family: 'Forum', cursive;
+  font-weight: 500;
+  font-size: 6vh;
+  text-align: left;
+  letter-spacing: 0.35rem;
+  padding-bottom: 4vh;
+  
+}
+
+.intro-subtext {
+    padding-top: 5vw;
+    padding-bottom: 1vw;
+}
+
+
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  padding: 50px 0;
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 10px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: #ddc4ad;
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 25vw;
+  padding: 1vw;
+  background: #d5dbcfe8;
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent;
+}
+
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* .timeline ul li::after {
+  transition: all .5s ease-in-out;
+}  */
+
+.timeline ul li.in-view::after {
+  background: #ddc4ad;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+.timeline-link {
+    text-decoration: none;
+    color: black;
+    padding: 0.75vw;
+    background-color: #d9e1b6d8;
+    margin-bottom: 1vw;
+
+}
+
+
+
+

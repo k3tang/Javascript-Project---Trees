@@ -1,53 +1,65 @@
 ﻿{	
 	"1": [
 	{
-		"event": "People of the Stallings Culture on the Savannah River begin making pottery",
-		"year": "2888 BC",
-		"website": "https://en.wikipedia.org/wiki/Archaic_period_(North_America)",
+		"event": "People of the Native American Stallings Culture on the Savannah River begin making pottery",
+		"year": "2800 BC",
+		"website": "https://en.wikipedia.org/wiki/Stallings_Island",
 		"id": "1"
 	},
 	{
-		"event": "Poverty Point culture in northeastern Louisiana features stone work, flintknapping, earthenware, and effigy, conical, and platform mounds, as well as planned settlements on concentric earthen ridges",
+		"event": "Native American Poverty Point culture in northeastern Louisiana features stone work, flintknapping, and platform mounds, as well as planned settlements on concentric earthen ridges",
 		"year": "2000 BC",
 		"website": "https://en.wikipedia.org/wiki/Poverty_Point_culture",
 		"id": "2"
 	},
 	{
-		"event": "Ancestral Pueblo culture dominates much of the American Southwest.",
+		"event": "Ancestral Pueblo culture dominates much of the American Southwest",
 		"year": "900 AD",
 		"website": "https://en.wikipedia.org/wiki/Ancestral_Puebloans",
 		"id": "3"
+	},
+	{	"event": "The Iroquois League (aka. Haudenosaunee) bands together Iroquoian tribes of the Great Lakes",
+		"year": "1142 - 1450 AD",
+		"website": "https://en.wikipedia.org/wiki/Iroquois#History",
+		"id": "4"
 	},
 	{
 		"event": "Christopher Columbus sails to India and stumbles on to the American continent",
 		"year": "1492 AD",
 		"website": "https://en.wikipedia.org/wiki/Columbian_exchange",
-		"id": "4"
-	},
-	{
-		"event": "Beginning of the American Revolutionary War",
-		"year": "1775 AD ",
-		"website": "https://en.wikipedia.org/wiki/American_Revolution",
 		"id": "5"
 	},
 	{
-		"event": "Beginning of the American Civil War",
+		"event": "American Revolutionary War begins",
+		"year": "1775 AD ",
+		"website": "https://en.wikipedia.org/wiki/American_Revolution",
+		"id": "6"
+	},
+	{
+		"event": "American Civil War is declared between the Union and Confederacy",
 		"year": "1861 AD",
 		"website": "https://en.wikipedia.org/wiki/American_Civil_War",
-		"id": "6"
+		"id": "7"
 	},
 	{
 		"event": "Beginning of the Civil Rights Movement",
 		"year": "1954 AD",
 		"website": "https://en.wikipedia.org/wiki/Civil_rights_movement",
-		"id": "7"
+		"id": "8"
 	},
 	{
 		"event": "United States and most of Europe enters the longest post–World War II recession, often called the \"Great Recession\"",
 		"year": "2008 AD",
 		"website": "https://en.wikipedia.org/wiki/Great_Recession_in_the_United_States",
-		"id": "8"
+		"id": "9"
+	},
+	{
+		"event": "COVID-19 hits the United States and declared a national emergency",
+		"year": "2020 AD",
+		"website": "https://en.wikipedia.org/wiki/COVID-19_pandemic_in_the_United_States",
+		"id": "10"
 	}
+
 ],
 	"2" : [
 	{

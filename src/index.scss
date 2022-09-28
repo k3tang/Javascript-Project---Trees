@@ -1,11 +1,23 @@
 @import './styles/reset.css';
-@import './styles/rings.css';
+@import './styles/timeline.css';
 @import './styles/oldest_tree.css';
 @import './styles/tabs.css';
 @import './styles/intro_page.css';
 
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12cm;
+}
+
 body {
     background-color: #e4dee0;
+    font-family: "Forum", cursive;
+}
+
+.nav-bar {
+    background-color: #e4dee099;
 }
 
 #icons-bar {
@@ -16,10 +28,12 @@ body {
     margin: auto;
     padding-top: 1%;
     padding-right: 1%;
+    padding-bottom: 1%;
+    overflow: hidden;
 
 }
 
-#icons-bar a {
+#icons-bar a, #icons-bar h1 {
     padding: 0.5%;
 }
 
@@ -27,7 +41,7 @@ body {
     height: 5vh;
 }
 
-h1 {
+#page-title {
     display: block;
     font-family: 'Forum', cursive;
     font-weight: 500;
@@ -36,7 +50,7 @@ h1 {
     letter-spacing: 0.35rem;
     margin-left: 2%;
     width: 80%;
-    margin-top: -2%;
+    margin-top: -3.5%;
 }
 
 
@@ -48,39 +62,5 @@ h1 {
     box-sizing: border-box;
 }
 
-#map-container {
-    width: 80%;
-    display: block;
-}
 
 
-#map-container path {
-    fill: #548567;
-    width: 500px;
-    cursor: pointer;
-}
-
-#map-container path:hover {
-    cursor: pointer;
-}
-
-#tip2 {
-    box-shadow: 5px 5px 10px #999;
-    background-color: #fcf5e3;
-  
-}
-
-
-#tip2 > p {
-    font-size: 1.5vh;
-    padding: 1vh;
-    line-height: 1;
-    text-align: center;
-   
-}
-
-* {
-    font-family: Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 0.12cm;
-}
