@@ -131,7 +131,6 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-<<<<<<< HEAD
 /*!*******************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/timeline.css ***!
   \*******************************************************************************************************/
@@ -293,124 +292,6 @@ table {
 
 
 
-/*!**********************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/oldest_tree.css ***!
-  \**********************************************************************************************************/
-
-
-h3 { 
-    font-size: 5vh;
-    text-align: center;
-    padding: 1vw;
-}
-
-#tree-grid-1, #tree-grid-2{
-    display: flex;
-    justify-content: center;
-    margin: auto;
-    padding-top: 1vh;
-    padding-bottom: 1vh;
-}
-
-
-.grid-piece > img {
-    height: 18vh;
-    cursor: pointer;
-    padding-left: 2vw;
-    padding-right: 2vw;
-    /* filter: sepia(100%); */
-
-}
-
-.grid-piece :hover {
-    filter: brightness(150%);
-}
-
-.grid-piece > p { 
-    font-size: 2vh;
-    text-align: center;
-    padding: 1vh;
-}
-
-/* .grid-piece.active > img {
-   border: 1px solid black;
-    height: 18vh;
-    cursor: pointer;
-    padding-left: 2vw;
-    padding-right: 2vw;
-} */
-
-#profile-text { 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7vh;
-    text-transform: none;
-    letter-spacing: 2px;
-    line-height: 2vh;
-    padding: 2.5vh;
-    padding-left: 14vw;
-    padding-right: 14vw;
-    background-color: #f4eee9;
-    height: 17vh;   
-}
-
-#profile-text > a {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.7vh;
-    line-height: inherit;
-    text-transform: inherit;
-    letter-spacing: inherit;
-}
-
-#start-text {
-    font-size: 2vh;
-    font-family: 'Forum', cursive;
-    line-height: 5vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    text-align: center;
-    ;
-}
-
-/*!***************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tabs.css ***!
-  \***************************************************************************************************/
-
-.tab {
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  
-}
-
-.tab button {
-    background-color: inherit;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 1%;
-    transition: 0.3s;
-    font-size: 1.7vh;
-    background-color: #cad2a9;
-    margin: 1%;
-}
-
-.tab button:hover {
-    background-color: #a8b89a;
-}
-
-.tab button.active {
-    background-color:#a8b89a;
-}
-
-.tabcontent {
-    display: none;
-    border-top: none;
-}
-
-=======
->>>>>>> refs/remotes/origin/main
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/intro_page.css ***!
   \*********************************************************************************************************/
@@ -445,6 +326,41 @@ h3 {
 } */
 
 
+/*!***************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tabs.css ***!
+  \***************************************************************************************************/
+.tab {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.tab button {
+    background-color: inherit;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1%;
+    transition: 0.3s;
+    font-size: 1.7vh;
+    background-color: #cad2a9;
+    margin: 1%;
+}
+
+.tab button:hover {
+    background-color: #a8b89a;
+}
+
+.tab button.active {
+    background-color:#a8b89a;
+}
+
+.tabcontent {
+    display: none;
+    border-top: none;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
@@ -518,7 +434,6 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: end;
-<<<<<<< HEAD
   height: 7vh;
   margin: auto;
   padding-top: 1%;
@@ -529,13 +444,6 @@ body {
 
 #icons-bar a, #icons-bar h1 {
   padding: 0.5%;
-=======
-  align-items: center;
-}
-
-#icons-bar a {
-  padding-right: 2vw;
->>>>>>> refs/remotes/origin/main
 }
 
 #icons-bar img {
@@ -546,13 +454,12 @@ body {
   display: block;
   font-family: "Forum", cursive;
   font-weight: 500;
-  font-size: 3vw;
+  font-size: 6vh;
   text-align: left;
   letter-spacing: 0.35rem;
-<<<<<<< HEAD
-  margin-left: 2%;
+  padding-left: 2%;
   width: 80%;
-  margin-top: -3.5%;
+  margin-top: -4%;
 }
 
 #all-contents {
@@ -560,80 +467,4 @@ body {
   flex-wrap: nowrap;
   align-items: flex-start;
   box-sizing: border-box;
-=======
-  margin-left: 2vw;
-}
-
-#contents {
-  display: block;
-  position: relative;
-  height: 55vw;
-  width: 100vw;
-  overflow: hidden;
-}
-
-.svg-content {
-  position: absolute;
-  top: 3vw;
-  right: -25vw;
-  width: 50vw;
-}
-
-#pine-sketch {
-  height: 60vw;
-  padding-top: 2vw;
-}
-
-#tip1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  position: absolute;
-  background-color: #f4eee9;
-  width: 38vw;
-  height: 30vw;
-  top: 11vw;
-  right: 27vw;
-  padding: 2vw;
-  line-height: 1.5vw;
-}
-
-#tip1 p {
-  padding-bottom: 2vw;
-}
-
-.tip-header {
-  font-size: 3vw;
-  border-bottom: 1px solid black;
-  margin-bottom: 2vw;
-}
-
-.tip-body {
-  font-size: 1vw;
-}
-
-.tip-link {
-  text-decoration: none;
-  color: black;
-  padding: 1vw 2vw;
-  background-color: #d9e1b6;
-}
-
-.tree-age {
-  padding-bottom: 3vw;
-}
-
-.age-text {
-  font-size: 3vw;
-  font-weight: 400;
-  padding-top: 2vw;
-}
-
-* {
-  font-family: Arial, Helvetica, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.12cm;
->>>>>>> refs/remotes/origin/main
 }

@@ -1,8 +1,7 @@
 @import './styles/reset.css';
 @import './styles/timeline.css';
-@import './styles/oldest_tree.css';
-@import './styles/tabs.css';
 @import './styles/intro_page.css';
+@import './styles/tabs.css';
 
 
 * {
@@ -100,9 +99,9 @@ margin-bottom: 200px;
     font-size: 6vh;
     text-align: left;
     letter-spacing: 0.35rem;
-    margin-left: 2%;
+    padding-left: 2%;
     width: 80%;
-    margin-top: -3.5%;
+    margin-top: -4%;
 }
 
 // 2nd page
