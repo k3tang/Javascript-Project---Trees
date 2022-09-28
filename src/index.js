@@ -8,7 +8,7 @@ const data = require("/src/data/tree_history.json");
 document.addEventListener("DOMContentLoaded", function(){
     //populating timeline events
     function callback_timelineEvent(i) { 
-     let timeGap = [10.196, 247.168, 500, 182.904, 87.436, 26.571, 28.733, 16.684, 4.325]
+     let timeGap = [10.196, 247.168, 450, 182.904, 87.436, 26.571, 28.733, 16.684, 4.325]
         let events = data[1][i]
         let currentEle =  document.getElementById(`event-${(i + 1)}`);
         currentEle.innerHTML = 
