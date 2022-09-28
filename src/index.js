@@ -1,5 +1,6 @@
 import * as d3 from "d3";
 import { active, svg } from "d3";
+import scrollama from "scrollama";
 
 const data = require("/src/data/tree_history.json");
 
@@ -49,6 +50,7 @@ document.addEventListener("DOMContentLoaded", function(){
 
     window.addEventListener("scroll", callbackFunc);
 
+        
 
 
 
