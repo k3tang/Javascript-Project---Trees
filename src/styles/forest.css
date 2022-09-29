@@ -1,0 +1,92 @@
+#ode {
+    overflow-y: scroll;
+}
+
+#forest-image {
+    position:fixed;
+    top: 0px;
+width: 100vw;
+z-index: -1;
+opacity: 80%;
+
+}
+
+.forest-text-container {
+    background-color:#e4dee099;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 22vh;
+
+}
+
+.forest-info-1 {
+    font-size: 6vh;
+    text-align: center;
+    line-height: 10vh;
+}
+
+.forest-info-2 {
+    font-size: 5vh;
+    padding-top: 22vh;
+    padding-bottom: 5vh
+}
+
+.forest-info-3 {
+    font-size: 3.5vh;
+    text-align: center;
+    line-height: 5vh;
+}
+
+.forest-grid-container {
+    height: 100vh;
+}
+
+.forest-info-6 {
+    font-size: 5vh;
+    text-align: center;
+    padding: 4vh 37vh;
+    line-height: 6vh;
+}
+
+.forest-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.forest-grid div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 16vw;
+    margin: 1vw;
+    font-size: 2.5vh;
+    padding: 2vh;
+    line-height: 4vh;
+    background-color: #b9c6b466;
+    color: transparent;
+    height: 1vh;
+    overflow: hidden;
+}
+
+.forest-grid div:hover {
+    height: 65vh;
+    color: black;
+    background-color:#f2f2f2cf;
+}
+
+.forest-grid div > a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 0.5vh;
+    text-align: center;
+    margin-top: 2vh;
+}

@@ -22,7 +22,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 70vh;
+  margin-top: 81vh;
   padding: 3vh;
   background-color: #fbebebdb;
 }
@@ -36,6 +36,12 @@
   letter-spacing: 0.35rem;
   padding-bottom: 4vh;
   
+}
+
+.intro-text-container h3 {
+  font-size: 6vh;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
 .intro-subtext {

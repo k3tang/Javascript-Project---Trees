@@ -14,16 +14,19 @@
     padding: 1%;
     transition: 0.3s;
     font-size: 1.7vh;
-    background-color: #cad2a9;
-    margin: 1%;
+    border-right: 1px solid black;
+}
+
+.tab button:first-child {
+    border-left: 1px solid black;
 }
 
 .tab button:hover {
-    background-color: #a8b89a;
+    background-color: #96b679a3;
 }
 
 .tab button.active {
-    background-color:#a8b89a;
+    font-weight: 600;
 }
 
 .tabcontent {

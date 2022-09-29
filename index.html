@@ -37,21 +37,20 @@
 
 
     <div class="nav-bar">
-        <div id="icons-bar">
-            <a id="linked-in" href="www.linkedin.com/in/karentsiu"><img src="./src/images/linkedin-logo.png" alt="linked-in-page" ></a>
-            <a id="github" href="https://github.com/k3tang"><img src="./src/images/github-logo.png" alt="github-page" ></a>
-        </div>
-    
         <h1 id="page-title">Evergreen Overstory</h1>
-        
         <div class="tab">
-            <button class="tablinks active" onclick="openTab(event, 'all-contents-container')">Time in Rings</button>
-            <button class="tablinks" onclick="openTab(event, 'ode')">An Ode to Trees</button>
-            <button class="tablinks" onclick="openTab(event, 'oldest-trees')">The Tree Millennials </button>
-          
+        <button class="tablinks active" onclick="openTab(event, 'all-contents-container')">Our Coexistence</button>
+        <button class="tablinks" onclick="openTab(event, 'ode')">An Ode to Trees</button>
+        <button class="tablinks" onclick="openTab(event, 'oldest-trees')">The Tree Millennials </button>
         </div>
+        <div id="icons-bar">
+            <a  href="www.linkedin.com/in/karentsiu" target="_blank" rel="noopener noreferrer"><img id="linked-in" src="./src/images/linkedin-logo.png" alt="linked-in-page" ></a>
+            <a  href="https://github.com/k3tang" target="_blank" rel="noopener noreferrer"><img id="github" src="./src/images/github-logo.png" alt="github-page" ></a>
+        </div>
+       
     </div>
-
+    
+    
 
 
     <!-- tabs bar  -->
@@ -90,9 +89,27 @@
 
      <!-- tab 2 -->
     <div id="ode" class="tabcontent" style="display:block">
-        <!-- <div style="background-image: url('./src/images/trees-background.png'); height: 85vh; overflow: visible;"><p id="quote">“This is not our world with trees in it. It's a world of trees, where humans have just arrived.”
-        <p id="author">― Richard Powers, The Overstory</p>
-        </p></div> -->
+        <div class="forest-text-container">
+        <div class="forest-info-1">Although trees appear to be stoic and unfeeling, they have the ability to give us good feels.</div>
+        <div class="forest-info-2">Forest Bathing (shinrin-yoku)</div>
+        <div class="forest-info-3">is a Japanese practice of short leisurely visits to a forest. Recent research have found that being amongst the trees can healing physically and emotionally.</div>
+    </div>
+    
+    <div class="forest-grid-container">
+         <div class="forest-instruction-container">
+            <div class="forest-info-6">Select the boxes to see what a simple walk in the park can do:</div>
+        </div>
+        <div class="forest-grid">
+            <div class="forest-grid-1">Volatile tree oils (phytoncides) causes a boost in natural killer cells (increased immunity) <br> <a href="https://pubmed.ncbi.nlm.nih.gov/17903349/" target="_blank" rel="noopener noreferrer">Learn more</a></div>
+            <div class="forest-grid-2">Salivary cortisol levels (a stress hormone) are significantly lowered <br> <a href="https://pubmed.ncbi.nlm.nih.gov/17435354/" target="_blank" rel="noopener noreferrer">Learn more</a></div>
+            <div class="forest-grid-3">Both systolic and diastolic blood pressure are lowered <br> <a href="https://pubmed.ncbi.nlm.nih.gov/28814305/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+            <div class="forest-info-4"> Decreased activity of sympathetic nerves (fight or flight response) <br> <a href="https://pubmed.ncbi.nlm.nih.gov/31210473/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+            <div class="forest-info-5">Reduces depressive, anger, fatigue, and anxiety symptoms  <br> <a href="https://pubmed.ncbi.nlm.nih.gov/31210473/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
+        </div>
+
+       
+    </div>
+      <img id="forest-image" src="./src/images/tree-valley.jpg" alt="sunlight-forest">
 
     </div>
 
@@ -108,7 +125,6 @@
 
 </body>
 <footer>
-<!-- <a href='https://www.freepik.com/photos/natural-scenery'>Natural scenery photo created by wirestock -
-    www.freepik.com</a> -->
+
 </footer>
 </html>
