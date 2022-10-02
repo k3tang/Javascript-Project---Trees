@@ -1,0 +1,27 @@
+#hand-image {
+position: fixed;
+top: 0px;
+width: 100vw;
+z-index: -1;
+opacity: 80%;
+}
+
+.humans-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+    height: 40vh;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #e4dee099;
+}
+
+.humans-text-1 {
+    font-size: 2vw;
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    padding: 1vh;
+}

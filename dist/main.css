@@ -348,7 +348,7 @@ table {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 1%;
+    padding: 10px;
     transition: 0.3s;
     font-size: 1.7vh;
     border-right: 1px solid black;
@@ -378,8 +378,8 @@ table {
 }
 
 #forest-image {
-    position:fixed;
-    top: 0px;
+position:fixed;
+top: 0px;
 width: 100vw;
 z-index: -1;
 opacity: 80%;
@@ -420,10 +420,12 @@ opacity: 80%;
 }
 
 .forest-info-6 {
-    font-size: 4.5vh;
+    display: block;
+    font-size: 4vh;
     text-align: center;
-    padding: 4vh 54vh;
+    margin: 4vh 54vh;
     line-height: 6vh;
+    background-color: #d7d9d666;
 }
 
 .forest-grid {
@@ -445,7 +447,7 @@ opacity: 80%;
     font-size: 2.5vh;
     padding: 2vh;
     line-height: 4vh;
-    background-color: #b9c6b466;
+    background-color: #d7d9d666;
     color: transparent;
     height: 1vh;
     overflow: hidden;
@@ -465,6 +467,37 @@ opacity: 80%;
     text-align: center;
     margin-top: 2vh;
 }
+/*!****************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/hands.css ***!
+  \****************************************************************************************************/
+#hand-image {
+position: fixed;
+top: 0px;
+width: 100vw;
+z-index: -1;
+opacity: 80%;
+}
+
+.humans-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 50vw;
+    height: 40vh;
+    margin: auto;
+    margin-top: 20vh;
+    background-color: #e4dee099;
+}
+
+.humans-text-1 {
+    font-size: 2vw;
+    margin-top: 40vh;
+    margin-bottom: 10vh;
+    padding: 1vh;
+}
+
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/

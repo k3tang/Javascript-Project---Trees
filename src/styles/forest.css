@@ -3,8 +3,8 @@
 }
 
 #forest-image {
-    position:fixed;
-    top: 0px;
+position:fixed;
+top: 0px;
 width: 100vw;
 z-index: -1;
 opacity: 80%;
@@ -45,10 +45,12 @@ opacity: 80%;
 }
 
 .forest-info-6 {
-    font-size: 4.5vh;
+    display: block;
+    font-size: 4vh;
     text-align: center;
-    padding: 4vh 54vh;
+    margin: 4vh 54vh;
     line-height: 6vh;
+    background-color: #d7d9d666;
 }
 
 .forest-grid {
@@ -70,7 +72,7 @@ opacity: 80%;
     font-size: 2.5vh;
     padding: 2vh;
     line-height: 4vh;
-    background-color: #b9c6b466;
+    background-color: #d7d9d666;
     color: transparent;
     height: 1vh;
     overflow: hidden;
