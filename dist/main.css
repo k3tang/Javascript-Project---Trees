@@ -134,7 +134,7 @@ table {
 /*!*******************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/timeline.css ***!
   \*******************************************************************************************************/
-#all-contents-container {
+#timeline-container {
     height: 110vh;
 }
 
@@ -189,6 +189,10 @@ table {
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  padding-bottom: 10vh;
+
+}
 
 .timeline ul {
   padding: 50px 0;
@@ -301,36 +305,40 @@ table {
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/intro_page.css ***!
   \*********************************************************************************************************/
-/* .ode-container {
-    position: relative;
-    height: 100vh;
-    
+#intro-image {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    z-index: 0;
 }
 
-#ode > div {
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: cover;
-    opacity: 0.85;
+
+#intro-page{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    align-items: center;
 }
 
-#quote {
-    font-size: 5vh;
-    padding-left: 45vh;
-    padding-right: 45vh;
-    line-height: 6vh;
+.intro-text {
+    width: 70vw;
+    margin-top: 7vw;
+    font-size: 1.5vw;
+    line-height: 2vw;
+    margin-bottom: 2vw;
+    z-index: 1;
 }
 
-#author {
-    font-size: 2vh;
-    padding: 2vh;
-    text-align: right;
-} */
-
+.pagelinks {
+    padding: 1vw;
+    margin-top: 2vw;
+    background: #ffffff87;
+    display: block;
+    text-align: center;
+    margin: auto;
+    border: 1px solid black;
+    z-index: 1;
+}
 
 /*!***************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./src/styles/tabs.css ***!
@@ -359,7 +367,7 @@ table {
 }
 
 .tab button:hover {
-    background-color: #96b679a3;
+    background-color: #c5cdbda3;
 }
 
 .tab button.active {
@@ -485,22 +493,85 @@ opacity: 80%;
     align-items: center;
     text-align: center;
     width: 50vw;
-    height: 40vh;
+    height: 50vh;
     margin: auto;
-    margin-top: 20vh;
+    margin-top: 18vh;
     background-color: #e4dee099;
+    margin-bottom: 18vh;
 }
 
-.humans-text-1 {
+.human-text-1 {
     font-size: 2vw;
-    margin-top: 40vh;
+    margin-top: 10vh;
     margin-bottom: 10vh;
     padding: 1vh;
+    line-height: 6vh;
 }
 
+.human-text-2 {
+    font-size: 1vw;
+}
+
+.human-text-3 {
+    text-align: center;
+    width: 56vw;
+    display: block;
+    margin: auto;
+    padding-top: 10vw;
+    font-size: 2vw;
+    line-height: 6vh;
+    margin-bottom: 7vw;
+}
+
+.human-text-2 > a {
+    text-decoration: none;
+}
+.hope-container {
+    background-color:  #e4dee0ab;
+    padding-bottom: 8vw;
+}
+
+.listing-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1vw;
+    background: #e4dee0;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    padding: 1vw;
+}
+
+.listing-text {
+    padding: 2vw;
+    width: 60vw;
+    background: #e4dee0;
+}
+
+.listing-text div, .listing-text a {
+    padding: 0.5vw;
+    margin-bottom: 1vw;
+}
+
+
+.listing-text a {
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.listing-container > img {
+    width: 15vw;
+}
 /*!*************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
+html {
+  overflow: auto;
+}
+
 * {
   font-family: Arial, Helvetica, sans-serif;
   text-transform: uppercase;
@@ -588,6 +659,7 @@ body {
   text-align: left;
   letter-spacing: 0.35rem;
   padding: 1vw;
+  z-index: 1;
 }
 
 #all-contents {

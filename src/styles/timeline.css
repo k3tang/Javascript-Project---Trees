@@ -1,4 +1,4 @@
-#all-contents-container {
+#timeline-container {
     height: 110vh;
 }
 
@@ -53,6 +53,10 @@
 
 /* TIMELINE
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+.timeline {
+  padding-bottom: 10vh;
+
+}
 
 .timeline ul {
   padding: 50px 0;

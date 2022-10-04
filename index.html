@@ -17,10 +17,9 @@
 
 <body>
 
-
     <script>
         function openTab(event, tabName) {
-            var i, tabcontent, tablinks;
+            let i, tabcontent, tablinks;
             tabcontent = document.getElementsByClassName("tabcontent");
             for (i = 0; i < tabcontent.length; i++) {
                 tabcontent[i].style.display = "none";
@@ -31,17 +30,16 @@
             }
             document.getElementById(tabName).style.display = "block";
             event.currentTarget.className += " active";
-
+             window.scrollTo(0,0);
         }
     </script>
-
 
     <div class="nav-bar">
         <h1 id="page-title">Evergreen Overstory</h1>
         <div class="tab">
-        <button class="tablinks" onclick="openTab(event, 'all-contents-container')">Our Coexistence Together</button>
+        <button class="tablinks" onclick="openTab(event, 'timeline-container')">Our Coexistence</button>
         <button class="tablinks" onclick="openTab(event, 'ode')">How Trees Care</button>
-        <button class="tablinks" onclick="openTab(event, 'oldest-trees')">Us and Trees</button>
+        <button class="tablinks" onclick="openTab(event, 'us-trees')">Us and Trees</button>
         </div>
         <div id="icons-bar">
             <a  href="www.linkedin.com/in/karentsiu" target="_blank" rel="noopener noreferrer"><img id="linked-in" src="./src/images/linkedin-logo.png" alt="linked-in-page" ></a>
@@ -50,8 +48,15 @@
        
     </div>
     
-    
-
+    <div class="tabcontent" id="intro-page">
+        <img id="intro-image" src="./src/images/trees-background.png" alt="foggy-forest">
+        <div class="intro-text">With any meaningful relationship, there is a time for reflection. Here, we will take stock of humankind's long-standing relationship with trees.
+            <br>
+            <br>
+              First, we will explore our coexistence by highlighting  historical events that has happened during the lifespan of the oldest tree alive, Methuselah. Then, we will explore the ways trees treat us. Lastly, we will look at how various collectives have been working to remedy our relationship with trees.
+        </div>
+            <button class="pagelinks" onclick="openTab(event, 'timeline-container')">Start: Our Coexistence</button>
+    </div>
 
     <!-- tabs bar  -->
 
@@ -59,11 +64,11 @@
 
     <!-- Tab content -->
     <!-- tab 1  -->
-    <div id="all-contents-container" class="tabcontent">
+    <div id="timeline-container" class="tabcontent">
     <section class="intro-scroll">
         <img id="methuselah-photo" src="./src/images/bristlecone-pine.jpg" alt="picture-of-methuselah"/>
         <div class="intro-text-container"> 
-            <h1>Meet Methusealeh</h1>
+            <h1>Meet Methuselah</h1>
             <h2>the oldeest tree to date at</h2>
             <h3>4800</h3>
             <h4>years old</h4>
@@ -84,7 +89,10 @@
             <li id="event-9"></li>
             <li id="event-10"></li>
         </ul>
+           <button class="pagelinks" onclick="openTab(event, 'ode')">Next: How Trees Care</button>
     </section>
+
+ 
     </div>
 
      <!-- tab 2 -->
@@ -106,7 +114,7 @@
             <div class="forest-info-4"> Decreases activity of sympathetic nerves (fight or flight response) <br> <a href="https://pubmed.ncbi.nlm.nih.gov/31210473/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
             <div class="forest-info-5">Reduces depressive, anger, fatigue, and anxiety symptoms  <br> <a href="https://pubmed.ncbi.nlm.nih.gov/31210473/" target="_blank" rel="noopener noreferrer">Learn More</a></div>
         </div>
-
+        <button class="pagelinks" onclick="openTab(event, 'us-trees')">Next: Us and Trees</button>
        
     </div>
       <img id="forest-image" src="./src/images/tree-valley.jpg" alt="sunlight-forest">
@@ -114,39 +122,42 @@
     </div>
 
        <!-- tab 3 -->
-    <div id="oldest-trees" class="tabcontent">
+    <div id="us-trees" class="tabcontent">
       <div class="humans-text-container">
-        <div class="humans-text-1">Our relationship with trees have been kind of rocky in the last few centuries.</div>
+        <div class="human-text-1">Our relationship with trees have been kind of rocky in the last few centuries.</div>
         <div class="human-text-2">I'll spare you the details, but you can  <a href="https://ourworldindata.org/deforestation" target="_blank" rel="noopener noreferrer">click here</a> to learn more.</div>
     </div>
     <img id="hand-image" src="./src/images/human-hands.jpg" alt="human-hands">
-    <div class="human-text-3">There is hope as we are starting to mend this vital relationship. Here are a few companies' creative strategies...</div>
+
+    <div class="hope-container">
+        <div class="human-text-3">There is hope as we are starting to mend this vital relationship. Here are a few companies' creative strategies...</div>
 
 
-        <div class="listing-container">
-            <img src="./src/images/growing-plant.jpg" alt="growing-plant">
-            <div class="listing-text">
-                <div class="human-text-4">Afforest: Growing a forest anywhere, including your backyard.</div>
-                <a href="https://www.ted.com/talks/shubhendu_sharma_how_to_grow_a_forest_in_your_backyard" target="_blank" rel="noopener noreferrer">Ted Talk</a>
-                <a href="https://www.afforestt.com/"  target="_blank" rel="noopener noreferrer">Website</a>
+            <div class="listing-container">
+                <img src="./src/images/growing-plant.jpg" alt="growing-plant">
+                <div class="listing-text">
+                    <div class="human-text-4">Afforest: Growing a forest anywhere, including your backyard.</div>
+                    <a href="https://www.ted.com/talks/shubhendu_sharma_how_to_grow_a_forest_in_your_backyard" target="_blank" rel="noopener noreferrer">Ted Talk</a>
+                    <a href="https://www.afforestt.com/"  target="_blank" rel="noopener noreferrer">Website</a>
+                </div>
             </div>
-        </div>
 
-         <div class="listing-container">
-            <img src="./src/images/tropical-forest.jpg" alt="growing-plant">
-            <div class="listing-text">
-                <div class="human-text-4">Leaf Coalition: Changing the economic model for protecting tropical forests</div>
-                <a href="https://www.ted.com/talks/nat_keohane_a_new_economic_model_for_protecting_tropical_forests" target="_blank" rel="noopener noreferrer">Ted Talk</a>
-                <a href="https://leafcoalition.org/"  target="_blank" rel="noopener noreferrer">Website</a>
+            <div class="listing-container">
+                <img src="./src/images/tropical-forest.jpg" alt="growing-plant">
+                <div class="listing-text">
+                    <div class="human-text-4">Leaf Coalition: Changing the economic model for protecting tropical forests</div>
+                    <a href="https://www.ted.com/talks/nat_keohane_a_new_economic_model_for_protecting_tropical_forests" target="_blank" rel="noopener noreferrer">Ted Talk</a>
+                    <a href="https://leafcoalition.org/"  target="_blank" rel="noopener noreferrer">Website</a>
+                </div>
             </div>
-        </div>
 
-        <div class="listing-container">
-            <img src="./src/images/indigenous-person.jpg" alt="growing-plant">
-            <div class="listing-text">
-                <div class="human-text-4">Tenure Facility: Protecting those who protect the forests</div>
-                <a href="https://www.ted.com/talks/nonette_royo_why_indigenous_forest_guardianship_is_crucial_to_climate_action" target="_blank" rel="noopener noreferrer">Ted Talk</a>
-                <a href="https://thetenurefacility.org/"  target="_blank" rel="noopener noreferrer">Website</a>
+            <div class="listing-container">
+                <img src="./src/images/indigenous-hands.jpg" alt="growing-plant">
+                <div class="listing-text">
+                    <div class="human-text-4">Tenure Facility: Protecting those who protect the forests</div>
+                    <a href="https://www.ted.com/talks/nonette_royo_why_indigenous_forest_guardianship_is_crucial_to_climate_action" target="_blank" rel="noopener noreferrer">Ted Talk</a>
+                    <a href="https://thetenurefacility.org/"  target="_blank" rel="noopener noreferrer">Website</a>
+                </div>
             </div>
         </div>
     </div>
