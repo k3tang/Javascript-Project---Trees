@@ -26,10 +26,9 @@ document.addEventListener("DOMContentLoaded", function(){
         
     //adding scroll event handler 
     let timelineEvents = document.querySelectorAll(".timeline li")
-    console.log(window.innerHeight, "height")
+
 
     function isElementInViewport(el) {
-        // console.log(el.getBoundingClientRect(), "el")
         let rect = el.getBoundingClientRect();
          return (
             rect.top >= 0 &&

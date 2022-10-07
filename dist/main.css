@@ -247,7 +247,7 @@ table {
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+    left: -544px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -292,7 +292,7 @@ table {
 .timeline-link {
     text-decoration: none;
     color: black;
-    padding: 0.75vw;
+    padding: 0.5vw;
     background-color: #d9e1b6d8;
     margin-bottom: 1vw;
 
@@ -406,9 +406,9 @@ opacity: 80%;
 }
 
 .forest-info-1 {
-    font-size: 6vh;
+    font-size: 3vw;
     text-align: center;
-    line-height: 10vh;
+    line-height: 4vw;
 }
 
 .forest-info-2 {
@@ -462,9 +462,16 @@ opacity: 80%;
 }
 
 .forest-grid div:hover {
+    animation: grow 0.35s linear;
     height: 65vh;
     color: black;
     background-color:#f2f2f2cf;
+}
+
+@keyframes grow {
+    0% { transform: scaleY(0.15); }
+    50% { transform: scaleY(0.5); }
+    100% { transform: scaleY(1); }
 }
 
 .forest-grid div > a {

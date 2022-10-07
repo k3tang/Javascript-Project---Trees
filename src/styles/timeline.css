@@ -111,7 +111,7 @@
 }
 
 .timeline ul li:nth-child(even) div {
-  left: -439px;
+    left: -544px;
 }
 
 .timeline ul li:nth-child(even) div::before {
@@ -156,7 +156,7 @@
 .timeline-link {
     text-decoration: none;
     color: black;
-    padding: 0.75vw;
+    padding: 0.5vw;
     background-color: #d9e1b6d8;
     margin-bottom: 1vw;
 

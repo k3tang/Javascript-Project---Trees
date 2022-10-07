@@ -25,7 +25,6 @@ An interactive profile page of the oldest trees is rendered using Vanilla DOM fu
  function callback_profile(event) { 
            var profileInfo = species[(event.target.parentNode.id) - 1]
            var textBox = document.querySelector("#profile-text");
-            console.log(textBox)
            textBox.innerHTML = `<p id="tree-name">${profileInfo.location}:<br>${profileInfo.species}</p><br><p id="tree-age">Age: ${profileInfo.age}</p><br>${profileInfo.profile} <a href="${profileInfo.website}">Learn More...<a>`
        };
 
