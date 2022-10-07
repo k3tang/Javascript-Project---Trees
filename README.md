@@ -1,6 +1,6 @@
 # Evergreen Overstory 
 
-Creating a visual presentation of the oldest living trees and the historical events that occurred during their lifespan. Users are able to select the historical data for each tree and learn more via the external links supplied. 
+This project is a visual storytelling 
 
 [Live Link](https://k3tang.github.io/Javascript-Project---Trees/)
 
@@ -8,7 +8,7 @@ Creating a visual presentation of the oldest living trees and the historical eve
 ## Technologies 
 * Javascript
 * CSS and HTML
-* D3
+
 
 ## Data
 Data was obtained from [OLDLIST](https://www.ldeo.columbia.edu/~adk/oldlisteast/) a database of ancient trees and their ages and [Wikipedia](https://www.wikipedia.org/) for details on historical events. 
