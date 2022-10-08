@@ -684,12 +684,9 @@ body {
 
 @keyframes fall {
   0% {
-    transform: translateY(0px);
-  }
-  75% {
-    transform: translateY(250px);
+    -webkit-transform: translateY(0vh);
   }
   100% {
-    transform: translateY(500px);
+    -webkit-transform: translateY(100vh);
   }
 }
