@@ -49,21 +49,21 @@ document.addEventListener("DOMContentLoaded", function(){
 
 // falling pinecones 
 
- window.onclick = function fallingPinecones(event) {
-    let canvas = document.getElementById('canvas');
-    let ctx = canvas.getContext('2d');
-    let rect = canvas.getBoundingClientRect();
-    let x = event.clientX;
-    let y = event.clientY;
-    let image = document.getElementById("pinecone");
-    image.style.position = "fixed"
-    image.style.top = `${y}px`;
-    image.style.left = `${x}px`;
-    image.style.visibility = "visible";
-    image.style.animation = "fall 5s linear running"
-    console.log("image", image)
+//  window.onclick = function fallingPinecones(event) {
+//     let canvas = document.getElementById('canvas');
+//     let ctx = canvas.getContext('2d');
+//     let rect = canvas.getBoundingClientRect();
+//     let x = event.clientX;
+//     let y = event.clientY;
+//     let image = document.getElementById("pinecone");
+//     image.style.position = "fixed"
+//     image.style.top = `${y}px`;
+//     image.style.left = `${x}px`;
+//     image.style.visibility = "visible";
+//     image.style.animation = "fall 5s linear running"
+//     console.log("image", image)
 
-};
+// };
 
 
  
