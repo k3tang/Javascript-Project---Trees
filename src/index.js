@@ -1,7 +1,5 @@
 import * as d3 from "d3";
-import { active, svg } from "d3";
-import scrollama from "scrollama";
-
+import { active, image, svg } from "d3";
 const data = require("/src/data/tree_history.json");
 
 
@@ -49,7 +47,55 @@ document.addEventListener("DOMContentLoaded", function(){
 
     window.addEventListener("scroll", callbackFunc);
 
+// falling pinecones 
 
+ function animate(x, y, ctx) {
+    // let VelocityY = 0;
+    // const gravity = 0.75;
+  
+    // setInterval(move, 2000/60)
+
+    // function move() {
+    //   ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //     if ( x > 2000) {
+    //     x = 0;
+    //     }
+    
+    //     if ( y >= 2000 ) {
+    //          ctx.clearRect(0, 0, canvas.width, canvas.height);
+    //         } else {
+    //         y += VelocityY;
+    //         VelocityY += gravity; // Higher values = lower position on canvas
+    
+    draw();
+   
+
+            function draw() {
+            let img = new Image();
+            img.onload = () => {
+                    ctx.drawImage(img, x, y, 70, 70);
+                }
+            img.src = document.getElementById("pinecone").src;
+            img.style.animation = "fall 2s linear"
+            console.log("image", img)
+            
+            }
+        }
+    
+
+
+ window.onclick = function getMousePosition( event) {
+    let canvas = document.getElementById('canvas');
+    let ctx = canvas.getContext('2d');
+     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    let rect = canvas.getBoundingClientRect();
+    let x = event.clientX;
+    let y = event.clientY;
+   animate(x, y, ctx);
+};
+
+
+ 
 
 
 

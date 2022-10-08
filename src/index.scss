@@ -114,5 +114,21 @@ margin-bottom: 200px;
     box-sizing: border-box;
 }
 
+// .active-cone {
+//      animation: falling 2s linear;
+// }
+
+@keyframes fall {
+    0% {
+        transform:translateY(0px)
+    }
+    75% {
+        transform:translateY(250px)
+    }
+    100% {
+        transform:translateY(500px)
+    }
+}
+
 
 

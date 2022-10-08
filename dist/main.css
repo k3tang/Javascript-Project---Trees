@@ -493,6 +493,12 @@ z-index: -1;
 opacity: 80%;
 }
 
+#canvas {
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
 .humans-text-container {
     display: flex;
     flex-direction: column;
@@ -674,4 +680,16 @@ body {
   flex-wrap: nowrap;
   align-items: flex-start;
   box-sizing: border-box;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0px);
+  }
+  75% {
+    transform: translateY(250px);
+  }
+  100% {
+    transform: translateY(500px);
+  }
 }

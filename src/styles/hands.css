@@ -6,6 +6,12 @@ z-index: -1;
 opacity: 80%;
 }
 
+#canvas {
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+}
+
 .humans-text-container {
     display: flex;
     flex-direction: column;
