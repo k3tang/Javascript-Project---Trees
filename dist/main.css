@@ -334,6 +334,7 @@ table {
     margin-top: 2vw;
     background: #ffffff87;
     display: block;
+    cursor: pointer;
     text-align: center;
     margin: auto;
     border: 1px solid black;
